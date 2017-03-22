@@ -1,0 +1,33 @@
+<aura:component implements="force:hasRecordId" access="global">
+    <aura:attribute name="propertyId" type="Id" />
+    <aura:attribute name="selectedProperty" type="Property__c" />
+    <aura:attribute name="showDialog" type="String" />
+    <aura:attribute name="remoteRecordId" type="Id" />
+
+    <force:recordPreview aura:id="propertyRecord" 
+                         recordId="{!v.propertyId}" 
+                         targetRecord="{!v.selectedProperty}" 
+                         layoutType="FULL" />
+
+    <div class="slds-media">
+        <div class="slds-media__figure">
+            <img src="{!v.selectedProperty.Thumbnail__c}" class="slds-avatar--large slds-avatar--circle" alt="{!v.selectedProperty.Title_c}" />
+        </div>
+        <div class="slds-media__body">
+            <div class="slds-grid">
+                <a data-record="{!v.selectedProperty.Id}" onclick="{!c.navToRecord}">
+                    <h3 class="slds-text-heading--small slds-m-bottom--xx-small">{!v.selectedProperty.Name}</h3>
+                </a>
+                <lightning:buttonIcon iconName="utility:edit" class="slds-col--bump-left" variant="bare" alternativeText="Edit Record" onclick="{!c.editMini}" value="{!v.selectedProperty.Id}" />
+            </div>
+            <div class="slds-m-top--small">
+                <ul class="slds-grid slds-wrap">
+                    <li class="slds-list__item slds-size--1-of-2"><span class="slds-text-color--weak slds-m-right--small">Beds:</span> {!v.selectedProperty.Beds__c}</li>
+                    <li class="slds-list__item slds-size--1-of-2"><span class="slds-text-color--weak slds-m-right--small">Baths:</span> {!v.selectedProperty.Baths__c}</li>
+                    <li class="slds-list__item slds-size--1-of-2"><span class="slds-text-color--weak slds-m-right--small">Price:</span> {!v.selectedProperty.Price__c}</li>
+                    <li class="slds-list__item slds-size--1-of-2"><span class="slds-text-color--weak slds-m-right--small">Status:</span> {!v.selectedProperty.Status__c}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</aura:component>

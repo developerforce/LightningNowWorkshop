@@ -1,0 +1,29 @@
+<aura:component controller="GetSimilarPropertiesApexController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="similarProperties" type="Object[]" />
+    <aura:attribute name="searchCriteria" type="String" />
+    <aura:attribute name="property" type="Property__c" />
+    <aura:attribute name="remoteRecordId" type="Id" />
+    <aura:attribute name="showDialog" type="String" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="c:recordUpdated" action="{!c.doSearch}"/>
+
+    <force:recordPreview aura:id="propertyService" 
+                         recordId="{!v.recordId}" 
+                         targetRecord="{!v.property}" 
+                         recordUpdated="{!c.doSearch}" 
+                         layoutType="FULL" />
+
+    <lightning:card iconName="custom:custom85" title="{! 'Similar Properties by ' + v.searchCriteria}">
+        <div class="slds-p-left--medium slds-p-right--medium">
+            <ul class="slds-list--vertical slds-has-dividers--top-space">
+                <aura:iteration items="{!v.similarProperties}" var="item" indexVar="i">
+                    <li class="slds-list__item">
+                        <c:SimilarProperty propertyId="{!item.Id}" selectedProperty="{!item}" remoteRecordId="{!v.remoteRecordId}" showDialog="{!v.showDialog}" />
+                    </li>
+                </aura:iteration>
+            </ul>
+        </div>
+        <c:SimilarPropertyEdit showDialog="{!v.showDialog}" remoteRecordId="{!v.remoteRecordId}" />
+    </lightning:card>
+</aura:component>
