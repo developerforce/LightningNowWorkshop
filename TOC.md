@@ -31,6 +31,8 @@ The Programmatic Exercises begin by walking you through the process of moving a 
 
 **[Exercise 5](Exercise_5.md)** - Creating a "Similar Properties" Lightning Component
 
-**[Exercise 5b](Exercise_5b.html)** - Leveraging force:recordPreview
+**[Exercise 6](Exercise_6.html)** - Leveraging force:recordPreview
 
-**[Exercise 6](Exercise_6.html)** - Using Lightning Components Everywhere
+**[Exercise 7](Exercise_7.html)** - Using Lightning Components Everywhere
+
+**[Exercise 8](Exercise_7.html)** - Using Lightning Components in Visualforce Pages
