@@ -185,7 +185,39 @@ In this exercise you will learn how to:
 
 1. Go back to the Property Record Detail page and refresh it. In the Similar Properties component, click the edit icon for a property to edit that property in place. 
 
-### Step 6 - Adding Design Parameters
+### Step 6 - Adding an Icon
+1. In the Developer Console, click on the SVG tile on the right-hand side of the window.
+2. In a new browser tab, navigate back to the [SLDS site](http://getslds.com).
+3. Navigate to the Icons section of the site.
+4. Scroll down to locate custom85 in the Custom section of icons.
+5. **(Informational Only)** Normally, you would click on the Downloads link in the navigation panel, and then scroll down to the Icons section and click the Download button.
+6. **(Informational Only)** After navigating to the downloaded zip file and unzipping it, open the folder and then open the custom folder. 
+7. **(Informational Only)** Locate the custom85.svg file and open it in a text editor.
+8. **(Informational Only)** Copy the `<path>` tag from the SVG.
+9. **(Informational Only)** In the Developer Console, switch to SimilarProperties.svg.
+10. **(Informational Only)** Replace the second `<path>` tag with the one you just copied.
+11. **(Informational Only)** At the beginning of the `<path>` you just pasted, add fill="#fff" before the "d" attribute.
+12. **(Informational Only)** Change `width="120px" height="120px" viewBox="0 0 120 120"` in the `<svg>` tag to:
+
+	```xml
+	width="100px" height="100px" viewBox="0 0 100 100"
+	```
+13. **(Informational Only)** Change the fill of the first `<path>` to `#F26891`.
+14. Select all and replace the .svg file in the Dev Console with: 
+
+	```svg
+	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			<path d="M120,108 C120,114.6 114.6,120 108,120 L12,120 C5.4,120 0,114.6 0,108 L0,12 C0,5.4 5.4,0 12,0 L108,0 C114.6,0 120,5.4 120,12 L120,108 L120,108 Z" id="Shape" fill="#2A739E"/>
+			<path fill="#FFF" d="m78 24h-50v-2c0-1.1-0.9-2-2-2h-4c-1.1 0-2 0.9-2 2v56c0 1.1 0.9 2 2 2h4c1.1 0 2-0.9 2-2v-46h50c1.1 0 2-0.9 2-2v-4c0-1.1-0.9-2-2-2z m-4 14h-34c-3.3 0-6 2.7-6 6v22c0 3.3 2.7 6 6 6h34c3.3 0 6-2.7 6-6v-22c0-3.3-2.7-6-6-6z m-5.5 17h-2.5v10c0 0.6-0.4 1-1 1h-4c-0.6 0-1-0.4-1-1v-6c0-0.6-0.4-1-1-1h-4c-0.6 0-1 0.4-1 1v6c0 0.6-0.4 1-1 1h-4c-0.6 0-1-0.4-1-1v-10h-2.5c-0.5 0-0.7-0.6-0.3-0.9l11.2-10.9c0.4-0.3 0.9-0.3 1.3 0l11.2 10.9c0.3 0.3 0.1 0.9-0.4 0.9z"></path>
+		</g>
+	</svg>
+	```
+
+15. Save the file.
+
+### Step 7 - Adding Design Parameters
 
 1. On the Property Record Detail page, click the Setup icon and select **Edit Page**.
 
