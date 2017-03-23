@@ -39,12 +39,16 @@ In this exercise you will learn:
 
 		standardStylesheets="false" applyBodyTag="false"
 		
+1. Add `styleClass="slds-button slds-button--neutral"` to the two `<apex:commandButton>` tags.
+
 1. Add `styleClass="slds-table slds-table--bordered slds-table--cell-buffer"` to the `<apex:pageBlockTable>` tag. 
+
 1. Save the page. Go back to the **Leads** tab and refresh the page. You can see that SLDS styles have begun to be applied.
-1. Switch back to **Salesforce Classic** and click the **Leads** tab again. Note that you now have Lightning styles within your Salesforce Classic environment. 
+
+1. Switch back to **Salesforce Classic** and click the **Leads** tab again. Notice that you now have Lightning styles within your Salesforce Classic environment. 
 We will address that issue in the next exercise.
 
-		
+> **Not working as expected?** Check out [this file](https://raw.githubusercontent.com/ccoenraets/LightningNowWorkshop/master/Exercise_1/DreamhouseLeads-1.page) to see what the code should look like at this stage. Feel free to cut and paste it in your own page.
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

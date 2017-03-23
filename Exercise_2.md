@@ -39,7 +39,7 @@ In this exercise you will learn how to:
             <div class="slds-page-header">
                 Header goes here
             </div>
-            Leader table goes here
+            Lead table goes here
         </div>
     </apex:outputPanel>
 	```
@@ -84,7 +84,7 @@ In this exercise you will learn how to:
 
 1. Go back to the Salesforce Lightning Design System site. Click **Components** in the side bar, then click **Data Tables**, and familiarize yourself with the markup and styles.
 
-1. Back in the Developer Console, replace the **Leader table goes here** text with the following code:
+1. Back in the Developer Console, replace the **Lead table goes here** text with the following code:
 
 	```html
 	<apex:pageBlock id="leads_list" >

@@ -25,7 +25,7 @@ In this exercise, you will learn how to:
 
 1. Save the file.    
     
-### Step 2 - Create the Visualfoce page
+### Step 2 - Create the Visualforce page
 
 1. In the Developer Console, create a new Visualforce page named **PictureGallery**.
 1. Implement the page as follows:
