@@ -1,6 +1,6 @@
-<apex:page controller="DreamhouseProspects">
-    <apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed == 'Theme4d'}" />
-    <apex:outputPanel rendered="{! !lightningDesktop}">
+<apex:page controller="DreamhouseProspects" standardStylesheets="{!isClassic}" applyBodyTag="{!isClassic}">
+
+    <apex:outputPanel rendered="{!isClassic}">
         <link class="user" href="/sCSS/38.0/sprites/1245343872000/Theme3/default/elements.css" rel="stylesheet" type="text/css" />
         <link  href="/sCSS/38.0/sprites/1251310209000/Theme3/dStandard.css" rel="stylesheet" type="text/css" />
         <apex:pageBlock >
@@ -22,11 +22,11 @@
                     <apex:column value="{! ct.LastName }"/>
                     <apex:column value="{! ct.Email }"/>
                     <apex:column value="{! ct.Phone }"/>
-                </apex:pageBlockTable>              
+                </apex:pageBlockTable>
             </apex:form>
         </apex:pageBlock>
     </apex:outputPanel>
-    <apex:outputPanel rendered="{! lightningDesktop}">
+    <apex:outputPanel rendered="{! !isClassic}">
         <apex:slds />
         <div class="slds-scope">
             <apex:form >
@@ -37,11 +37,11 @@
                                 <div class="slds-media__figure">
                                     <svg class="slds-icon slds-icon-standard-user .slds-icon--small" aria-hidden="true">
                                         <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#lead')}"></use>
-                                    </svg> 
+                                    </svg>
                                 </div>
                                 <div class="slds-media__body">
                                     <p class="slds-text-title--caps slds-line-height--reset">Lead</p>
-                                    <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" 
+                                    <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate"
                                         title="this should match the Record Title">Home</h1>
                                 </div>
                             </div>

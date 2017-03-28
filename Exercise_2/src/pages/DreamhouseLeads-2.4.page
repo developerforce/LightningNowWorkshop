@@ -1,8 +1,8 @@
-<apex:page controller="DreamhouseProspects" standardStylesheets="false" applyBodyTag="false">
+<apex:page controller="DreamhouseProspects" standardStylesheets="{!isClassic}" applyBodyTag="{!isClassic}">
 
     <apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed=='Theme4d'}" />
 
-    <apex:outputPanel rendered="{! !lightningDesktop}">
+    <apex:outputPanel rendered="{!isClassic}">
         <apex:pageBlock >
             <apex:sectionHeader title="Leads" subtitle="Home"/>
             <apex:form >
@@ -26,7 +26,7 @@
             </apex:form>
         </apex:pageBlock>
     </apex:outputPanel>
-    <apex:outputPanel rendered="{! lightningDesktop}">
+    <apex:outputPanel rendered="{! !isClassic}">
         <apex:slds />
         <div class="slds-scope">
             <div class="slds-page-header">
