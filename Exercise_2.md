@@ -16,7 +16,8 @@ In this exercise you will learn how to:
 1. In the Developer Console, open the **DreamhouseProspects** Apex class
 1. Below the `public String sortOrder {set; get;}`, add the following method to detect the User's current theme:
 
-	```public Boolean getIsClassic() { return (UserInfo.getUiThemeDisplayed() == 'Theme3' && ApexPages.currentPage().getParameters().get('beLightning') == null);}
+	```java
+	public Boolean getIsClassic() { return (UserInfo.getUiThemeDisplayed() == 'Theme3' && ApexPages.currentPage().getParameters().get('beLightning') == null);}
 	```
 
 1. Save the class.
@@ -31,7 +32,8 @@ In this exercise you will learn how to:
 1. Remove the opening and closing `<div class="slds-scope">` tags.
 1. Update the `<apex:page>` tag to refer to the Apex variable:
 
-	```<apex:page controller="DreamhouseProspects" standardStylesheets="{!isClassic}" applyBodyTag="{!isClassic}">
+	```html
+	<apex:page controller="DreamhouseProspects" standardStylesheets="{!isClassic}" applyBodyTag="{!isClassic}">
 	```
 
 1. Wrap the `<apex:pageBlock>` with the following tag to render it only when the page is running in Salesforce Classic:
