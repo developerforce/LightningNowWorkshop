@@ -19,7 +19,7 @@ In this exercise you will learn how to:
 	```public Boolean getIsClassic() {
           return (UserInfo.getUiThemeDisplayed() == 'Theme3' && ApexPages.currentPage().getParameters().get('beLightning') == null);
       }
-  ```
+	```
 
 1. Save the class.
 
@@ -34,13 +34,13 @@ In this exercise you will learn how to:
 1. Update the `<apex:page>` tag to refer to the Apex variable:
 
 	```<apex:page controller="DreamhouseProspects" standardStylesheets="{!isClassic}" applyBodyTag="{!isClassic}">
-  ```
+	```
 
 1. Wrap the `<apex:pageBlock>` with the following tag to render it only when the page is running in Salesforce Classic:
 
 	```html
 	<apex:outputPanel rendered="{!isClassic}"> ... </apex:outputPanel>
-   ```
+	```
 
 1. Paste the following code immediately after the closing `</apex:outputPanel>` tag. This block will only be rendered when the page is running in the Lightning Experience:
 
