@@ -52,7 +52,7 @@ In this exercise, you will learn how to:
 1. Add the following input field on a new line under the `<aura:attribute/>` tag:
 
 	```html
-    <lightning:input label="Greeting" value="{!v.greeting}"/>
+    <lightning:input name="Greeting" label="Greeting" value="{!v.greeting}"/>
 	```
 
 1. Save the file and reload the Property Record Detail page.
@@ -80,14 +80,14 @@ In this exercise, you will learn how to:
 
 3. Go back to the **HelloWorld** component and add `controller="HelloWorldController"` to the `<aura:component>` tag.
 
-4. Add an `init` event handler right after the **greeting** attribute 
+4. Add an `init` event handler right after the **greeting** attribute
 declaration.
 
 	```html
 	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
 	```
 
-    With this event handler in place, the `doInit()` function of the 
+    With this event handler in place, the `doInit()` function of the
     component's JavaScript controller will be called when the component is initialized.
 
 5. Click **CONTROLLER** in the sidebar on the right and implement the client-side controller as follows:
@@ -104,7 +104,7 @@ declaration.
 	    }
 	})
 	```
-		
+
 6. Save all the files.
 7. Refresh the Property page.
 
