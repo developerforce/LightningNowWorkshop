@@ -16,9 +16,7 @@ In this exercise you will learn how to:
 1. In the Developer Console, open the **DreamhouseProspects** Apex class
 1. Below the `public String sortOrder {set; get;}`, add the following method to detect the User's current theme:
 
-	```public Boolean getIsClassic() {
-          return (UserInfo.getUiThemeDisplayed() == 'Theme3' && ApexPages.currentPage().getParameters().get('beLightning') == null);
-      }
+	```public Boolean getIsClassic() { return (UserInfo.getUiThemeDisplayed() == 'Theme3' && ApexPages.currentPage().getParameters().get('beLightning') == null);}
 	```
 
 1. Save the class.
