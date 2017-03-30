@@ -35,4 +35,4 @@ The Programmatic Exercises begin by walking you through the process of moving a 
 
 **[Exercise 7](Exercise_7.html)** - Using Lightning Components Everywhere
 
-**[Exercise 8](Exercise_7.html)** - Using Lightning Components in Visualforce Pages
+**[Exercise 8](Exercise_8.html)** - Using Lightning Components in Visualforce Pages
