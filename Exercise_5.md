@@ -174,8 +174,7 @@ In this exercise you will learn how to:
         var recordId = event.getSource().get("v.value");
         var editRecordEvent = $A.get("e.force:editRecord");
         editRecordEvent.setParams({
-            "recordId": recordId,
-            searchCriteria: 'Price'
+            "recordId": recordId
         });
         editRecordEvent.fire(); 
     }

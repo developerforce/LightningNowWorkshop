@@ -19,23 +19,24 @@ title: Using Lightning Components Everywhere
 ### Step 2 - Add a Lightning Component to the Utility Bar
 1. Click the Setup icon and choose Setup.
 2. Click on **Apps** and choose **App Manager**.
-3. Click the Actions dropdown for Dreamhouse Classic Lightning and choose **Edit**.
-4. Click the Utility Bar section at the top of the screen.
+3. Click the Actions dropdown for the **Dreamhouse Classic** app and click **Upgrade**. Name the new application **Dreamhouse Lightning** and click **Save** (this may take a minute to complete).
+3. Click the Actions dropdown for the **Dreamhouse Lightning** app and click **Edit**.
+4. Click the **Utility Bar** section at the top of the screen.
 5. Click the **Add** button and scroll down to Mortgage Calculator.
 6. Click Save.
 7. Reload the Property Record Detail page to see the Mortgage Calculator in the Utility Bar.
 
 ### Step 3 - Make a Lightning Component a Quick Action
 1. In the Dev Console, choose **File > Open Lightning Resources**.
-2. Open the **Mortgage Calculator Card**.
-3. In the component, add `force:lightningQuickActionWithoutHeader` to the **implements** attribute. Don't forget the comma to seperate the values from one another.
+2. Open the **Mortgage Calculator**.
+3. In the component, add `force:lightningQuickActionWithoutHeader` to the **implements** attribute. Don't forget the comma to separate the values from one another.
 4. Save the file.
 5. In **Setup**, choose **Objects and Fields**, then choose **Property**.
 6. Scroll down to **Buttons, Links and Actions**.
 7. Click the **New Action** button.
 8. For Action, choose **Lightning Component**.
-9. Notice that **MortgageCalculatorCard** is already selected. The list only shows components that have the **force:lightningQuickAction** or **force:lightningQuickActionWithoutHeader** interface.
-10. Give the component a height of 400px.
+9. Notice that **MortgageCalculator** is already selected. The list only shows components that have the **force:lightningQuickAction** or **force:lightningQuickActionWithoutHeader** interface.
+10. Give the component a height of 300px.
 11. Give the component a label of **Mortgage Calculator**.
 11. Click on the Object Manager and choose Property again.
 12. Scroll down to the **Page Layouts** section and click on the **Property Layout**.

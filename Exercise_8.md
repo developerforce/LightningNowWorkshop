@@ -90,22 +90,20 @@ In this exercise, you will learn how to:
 
 1. Go back to the PictureGallery Visualforce page in the Developer console.
 
-1. Add the following code just before the closing `</script>` tag to instantiate the **PictureGallery** component.   
+1. Add the following code immediately after the existing `$Lightning.createComponent` block to instantiate the **PictureGallery** component.   
     
     ```js
-    $Lightning.use("c:PictureGalleryApp", function() {
-        $Lightning.createComponent("c:PictureCarousel",
-            {slides: [
-                'https://s3-us-west-1.amazonaws.com/sfdc-demo/houses/living_room.jpg',
-                'https://s3-us-west-1.amazonaws.com/sfdc-demo/houses/eatinkitchen.jpg',
-                'https://s3-us-west-1.amazonaws.com/sfdc-demo/houses/kitchen.jpg'
-            ]},
-            "carousel",
-            function(cmp) {
-                console.log("Carousel component loaded");
-            }
-        );
-    });
+    $Lightning.createComponent("c:PictureCarousel",
+        {slides: [
+            'https://s3-us-west-1.amazonaws.com/sfdc-demo/houses/living_room.jpg',
+            'https://s3-us-west-1.amazonaws.com/sfdc-demo/houses/eatinkitchen.jpg',
+            'https://s3-us-west-1.amazonaws.com/sfdc-demo/houses/kitchen.jpg'
+        ]},
+        "carousel",
+        function(cmp) {
+            console.log("Carousel component loaded");
+        }
+    );
     ```
 
 1. Save the file.
