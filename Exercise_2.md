@@ -11,29 +11,43 @@ In this exercise you will learn how to:
 * Add conditional rendering logic to a page to provide the native look and feel for the UX environment the page is running in  
 * Use the Salesforce Lightning Design System markup and styles
 
+### Step 1 - Add a check for the User Theme to the Apex controller
 
-### Step 1 - Add Conditional Logic to the page
+1. In the Developer Console, open the **DreamhouseProspects** Apex class
+1. Below the `public String sortOrder {set; get;}`, add the following method to detect the User's current theme:
+
+	```java
+	public Boolean getIsClassic() { 
+		return (UserInfo.getUiThemeDisplayed() == 'Theme3' && ApexPages.currentPage().getParameters().get('beLightning') == null);
+	}
+	```
+
+1. Save the class.
+
+1. To see the whole class as expected at this step, check out [this file](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_2/src/classes/DreamhouseProspects.cls).
+
+### Step 2 - Remove the previous CSS changes and add dynamic blocks based on getIsClassic
 
 1. In the Developer Console, open the **DreamhouseLeads** page.
 1. Remove the `styleClass="slds-table slds-table--bordered slds-table--cell-buffer"` that you added to the `<apex:pageBlockTable>` in the previous exercise.
 1. Remove the `<apex:slds />` tag.
 1. Remove the opening and closing `<div class="slds-scope">` tags.
-1. Add a new line after the opening `<apex:page>` tag, and add the following variable definition:
- 
-    ```html
-	<apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed=='Theme4d'}" />
+1. Update the `<apex:page>` tag to refer to the Apex variable:
+
+	```html
+	<apex:page controller="DreamhouseProspects" standardStylesheets="{!isClassic}" applyBodyTag="{!isClassic}">
 	```
 
 1. Wrap the `<apex:pageBlock>` with the following tag to render it only when the page is running in Salesforce Classic:
 
-    ```html
-	<apex:outputPanel rendered="{! !lightningDesktop}"> ... </apex:outputPanel>
-    ```
+	```html
+	<apex:outputPanel rendered="{!isClassic}"> ... </apex:outputPanel>
+	```
 
 1. Paste the following code immediately after the closing `</apex:outputPanel>` tag. This block will only be rendered when the page is running in the Lightning Experience:
 
 	```html
-    <apex:outputPanel rendered="{! lightningDesktop}">
+    <apex:outputPanel rendered="{! !isClassic}">
         <apex:slds />
         <div class="slds-scope">
             <div class="slds-page-header">
@@ -50,9 +64,9 @@ In this exercise you will learn how to:
 
 1. Load the page in the **Lightning Experience**: the page displays the basic scaffolding for the Lightning Experience implementation. We will provide the complete implementation in the next steps.
 
-> **Not working as expected?** Check out [this file](https://raw.githubusercontent.com/ccoenraets/LightningNowWorkshop/master/Exercise_2/src/pages/DreamhouseLeads-2.1.page) to see what the code should look like at this stage. Feel free to cut and paste it in your own page.
+> **Not working as expected?** Check out [this file](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_2/src/pages/DreamhouseLeads-2.1.page) to see what the code should look like at this stage. Feel free to cut and paste it in your own page.
 
-### Step 2 - Add the SLDS Header
+### Step 3 - Add the SLDS Header
 
 1. Navigate to the [Salesforce Lightning Design System](http://getslds.com) site. Click **Components** in the side bar, then click **Page Headers**, and familiarize yourself with the markup and styles.
 
@@ -65,7 +79,7 @@ In this exercise you will learn how to:
                 <div class="slds-media__figure">
                     <svg class="slds-icon slds-icon-standard-user" aria-hidden="true">
                         <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#lead')}"></use>
-                    </svg> 
+                    </svg>
                 </div>
                 <div class="slds-media__body">
                     <p class="slds-text-title--caps slds-line-height--reset">Record Type</p>
@@ -80,7 +94,7 @@ In this exercise you will learn how to:
 
 1. Load the page in the Lightning Experience: the header displays as expected.
 
-### Step 3 - Add the SLDS Data Table
+### Step 4 - Add the SLDS Data Table
 
 1. Go back to the Salesforce Lightning Design System site. Click **Components** in the side bar, then click **Data Tables**, and familiarize yourself with the markup and styles.
 
@@ -129,9 +143,9 @@ In this exercise you will learn how to:
 
 1. Save the file and reload the page (in the Lightning Experience). The lead table should display.
 
-> **Not working as expected?** Check out [this file](https://raw.githubusercontent.com/ccoenraets/LightningNowWorkshop/master/Exercise_2/src/pages/DreamhouseLeads-2.3.page) to see what the code should look like at this stage. Feel free to cut and paste it in your own page.
+> **Not working as expected?** Check out [this file](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_2/src/pages/DreamhouseLeads-2.3.page) to see what the code should look like at this stage. Feel free to cut and paste it in your own page.
 
-### Step 4 (Optional) - Refine the SLDS Header
+### Step 5 (Optional) - Refine the SLDS Header
 
 1. Select the entire `<div class="slds-page-header"> ... </div>` tag and replace it with:
 
@@ -144,11 +158,11 @@ In this exercise you will learn how to:
                     <div class="slds-media__figure">
                         <svg class="slds-icon slds-icon-standard-user .slds-icon--small" aria-hidden="true">
                             <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#lead')}"></use>
-                        </svg> 
+                        </svg>
                     </div>
                     <div class="slds-media__body">
                         <p class="slds-text-title--caps slds-line-height--reset">Lead</p>
-                        <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" 
+                        <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate"
                             title="this should match the Record Title">Home</h1>
                     </div>
                 </div>
@@ -181,7 +195,7 @@ In this exercise you will learn how to:
 
 1. Switch back to the Lightning Experience.
 
-> **Not working as expected?** Check out [this file](https://raw.githubusercontent.com/ccoenraets/LightningNowWorkshop/master/Exercise_2/src/pages/DreamhouseLeads-2.4.page) to see what the code should look like at this stage. Feel free to cut and paste it in your own page.
+> **Not working as expected?** Check out [this file](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_2/src/pages/DreamhouseLeads-2.4.page) to see what the code should look like at this stage. Feel free to cut and paste it in your own page.
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
