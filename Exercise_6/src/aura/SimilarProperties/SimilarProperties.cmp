@@ -6,13 +6,9 @@
     <aura:attribute name="remoteRecordId" type="Id" />
     <aura:attribute name="showDialog" type="String" default="false" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
-    <aura:handler event="c:recordUpdated" action="{!c.doSearch}"/>
+    <aura:handler event="c:recordUpdated" action="{!c.doSearch}" />
 
-    <force:recordPreview aura:id="propertyService" 
-                         recordId="{!v.recordId}" 
-                         targetRecord="{!v.property}" 
-                         recordUpdated="{!c.doSearch}" 
-                         layoutType="FULL" />
+    <force:recordPreview aura:id="propertyService" recordId="{!v.recordId}" targetRecord="{!v.property}" recordUpdated="{!c.doSearch}" layoutType="FULL" />
 
     <lightning:card iconName="custom:custom85" title="{! 'Similar Properties by ' + v.searchCriteria}">
         <div class="slds-p-left--medium slds-p-right--medium">
