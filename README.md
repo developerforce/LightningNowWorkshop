@@ -9,7 +9,7 @@ The workshop is divided into two sections, Declarative and Programmatic. In orde
 1. Complete the [Lightning Experience Migration Rollout Module](https://trailhead.salesforce.com/modules/lex_migration_rollout) (1hr)
 2. **Extra Credit**: [Migrate to Lightning Experience Trail](https://trailhead.salesforce.com/trail/lex_admin_migration) (6.5hrs) 
 
-<p><a class="btn btn-primary btn-lg" style="background-color: transparent;color: #00A1E1;text-align:center;margin:20px 0;" href="TOC.html" role="button">Let's Get Started!</a></p>
+<p style="background-color: transparent;color: #00A1E1;text-align:center;margin:20px 0;"><a class="btn btn-primary btn-lg" href="TOC.html" role="button">Let's Get Started!</a></p>
 
 ##### Additional Resources
 
