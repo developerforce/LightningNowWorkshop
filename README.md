@@ -1,4 +1,4 @@
-#### The **Lightning Now Hands-on Workshop** is part of the [Global Lightning Now Tour](https://developer.salesforce.com/blogs/developer-relations/2017/03/salesforce-global-lightning-tour-coming-city-near.html).
+#### The **Lightning Now Hands-on Workshop** is part of the [Lightning Now Tour](https://developer.salesforce.com/blogs/developer-relations/2017/03/salesforce-global-lightning-tour-coming-city-near.html).
 
 After completing the workshop, you will come away with hands-on experience migrating an existing Classic application to Lightning Experience. The exercises will walk you through initial setup, show you how to customize Lightning pages, share strategies for using Visualforce in Lightning Experience, and help you learn how to build Lightning Components for exactly what you need.
 
