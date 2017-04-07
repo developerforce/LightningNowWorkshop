@@ -35,12 +35,12 @@ Now that we are in the Lightning Experience view for the Dreamhouse Classic App,
 1. Chatter Tab
 2. Click on **Company Highlights.** Company Highlights will show trending, new and popular posts from across your organization even if you are not following the related records. 
 3. **Chatter Streams.** Chatter Streams is where your users can create curated lists of records and people to follow. Create up to five Chatter streams that combine posts from different feeds and different feed types. Combine feeds from people, groups, and records, like your accounts, opportunities, and cases. 
-        1. Chatter Streams 
-            1. Name: Top Properties & Brokers
-            2. Include in Stream
-                1. Properties: 121 Harborwalk Drive & 127 Endicott St
-                2. Users: Angela Agent, Randy Realtor
-                3. Save. You now have a brand new, curated Chatter Stream that allows you to quickly get to the relevant updates for a specific set of records, even if you are not following those records. 
+    1. Chatter Streams 
+        1. Name: Top Properties & Brokers
+        2. Include in Stream
+            1. Properties: 121 Harborwalk Drive & 127 Endicott St
+            2. Users: Angela Agent, Randy Realtor
+            3. Save. You now have a brand new, curated Chatter Stream that allows you to quickly get to the relevant updates for a specific set of records, even if you are not following those records. 
 
 #### Search 
 
