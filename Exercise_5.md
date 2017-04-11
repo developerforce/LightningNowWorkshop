@@ -276,10 +276,10 @@ In this exercise you will learn how to:
 1. Click **Save**, then navigate back to the Property Record Detail page.
 
 > **Not working as expected?** The final implementation of the component is available here: 
-[component](https://raw.githubusercontent.com/ccoenraets/LightningNowWorkshop/master/Exercise_5/src/aura/SimilarProperties/SimilarProperties.cmp), 
-[JavaScript controller](https://raw.githubusercontent.com/ccoenraets/LightningNowWorkshop/master/Exercise_5/src/aura/SimilarProperties/SimilarPropertiesController.js), 
-[design](https://raw.githubusercontent.com/ccoenraets/LightningNowWorkshop/master/Exercise_5/src/aura/SimilarProperties/SimilarProperties.design), 
-[Apex controller](https://raw.githubusercontent.com/ccoenraets/LightningNowWorkshop/master/Exercise_5/src/classes/MyPropertyController.cls). 
+[component](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_5/src/aura/SimilarProperties/SimilarProperties.cmp), 
+[JavaScript controller](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_5/src/aura/SimilarProperties/SimilarPropertiesController.js), 
+[design](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_5/src/aura/SimilarProperties/SimilarProperties.design), 
+[Apex controller](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_5/src/classes/MyPropertyController.cls). 
 Feel free to check it out or cut and paste it in your own component.
 
 <div class="row" style="margin-top:40px;">
