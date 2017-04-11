@@ -4,7 +4,7 @@
     <aura:attribute name="recordId" type="Id" />
     <aura:attribute name="similarProperties" type="Object[]" />
     <aura:attribute name="searchCriteria" type="String" default="Price" />
-
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
 
     <lightning:card iconName="custom:custom85" title="{! 'Similar Properties by ' + v.searchCriteria}">
