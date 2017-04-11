@@ -58,6 +58,7 @@ In this exercise you will learn how to:
     <aura:attribute name="similarProperties" type="Object[]" />
     
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
     
     <lightning:card iconName="custom:custom85" title="Similar Properties">
         <div class="slds-p-left--medium slds-p-right--medium">
@@ -115,7 +116,7 @@ In this exercise you will learn how to:
 	            <a data-record="{!item.Id}" onclick="{!c.navToRecord}">
 	                <h3 class="slds-text-heading--small slds-m-bottom--xx-small">{!item.Name}</h3>
 	            </a>
-	            <!-- Edit button comes here -->                             
+	            <!-- Edit button goes here -->                             
 	        </div>
 	        <div class="slds-m-top--small">
 	            <ul class="slds-grid slds-wrap">
@@ -159,7 +160,7 @@ In this exercise you will learn how to:
 
 1. In the Developer Console, go back to the SimilarProperties component markup.
 
-1. Replace `<!-- Edit button comes here -->` with the following code:
+1. Replace `<!-- Edit button goes here -->` with the following code:
 
 	```html
 	<lightning:buttonIcon iconName="utility:edit" class="slds-col--bump-left" variant="bare" alternativeText="Edit Record" onclick="{!c.editRecord}" value="{!item.Id}" />
