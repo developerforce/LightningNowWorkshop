@@ -260,12 +260,11 @@ title: Data Binding with force:recordPreview (Developer Orgs Only)
 18. Click the **Edit** icon for a property in either component and set the beds or price such that it will either appear or disappear from the other component instance.
 
 > **Not working as expected?** The final implementation of the components for this exercise are available here: 
-> 
-##### SimilarPropertyEdit Component
+> ##### SimilarPropertyEdit Component
 > [SimilarPropertyEdit.cmp](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarPropertyEdit/SimilarPropertyEdit.cmp), [SimilarPropertyEditController.js](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarPropertyEdit/SimilarPropertyEditController.js), [SimilarPropertyEditHelper.js](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarPropertyEdit/SimilarPropertyEditHelper.js)
-> #####SimilarProperty Component
+> ##### SimilarProperty Component
 > [SimilarProperty.cmp](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperty/SimilarProperty.cmp), [SimilarPropertyController.js](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperty/SimilarPropertyController.js)
-> #####SimilarProperties Component
+> ##### SimilarProperties Component
 > [SimilarProperties.cmp](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperties/SimilarProperties.cmp), [SimilarPropertiesController.js](https://github.com/developerforce/LightningNowWorkshop/blob/master/Exercise_6/src/aura/SimilarProperties/SimilarPropertiesController.js), [SimilarPropertiesHelper.js](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperties/SimilarPropertiesHelper.js) 
 > Feel free to check it out or cut and paste it in your own component.
 
