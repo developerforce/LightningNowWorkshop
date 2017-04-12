@@ -138,7 +138,7 @@ In this exercise you will learn how to:
 
 1. Go back to the Developer Console and open the controller of the SimilarProperties component.
 
-1. Add the following function (don't forget to add a comma to seperate the function definitions):
+1. Add the following function (don't forget to add a comma to separate the function definitions):
 
 	```js
     navToRecord : function (component, event, helper) {
