@@ -261,7 +261,7 @@ title: Data Binding with force:recordPreview (Developer Orgs Only)
 
 > **Not working as expected?** The final implementation of the components for this exercise are available here: 
 > 
-#####SimilarPropertyEdit Component
+##### SimilarPropertyEdit Component
 > [SimilarPropertyEdit.cmp](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarPropertyEdit/SimilarPropertyEdit.cmp), [SimilarPropertyEditController.js](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarPropertyEdit/SimilarPropertyEditController.js), [SimilarPropertyEditHelper.js](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarPropertyEdit/SimilarPropertyEditHelper.js)
 > #####SimilarProperty Component
 > [SimilarProperty.cmp](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperty/SimilarProperty.cmp), [SimilarPropertyController.js](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperty/SimilarPropertyController.js)
