@@ -239,7 +239,7 @@ title: Data Binding with force:recordPreview (Developer Orgs Only)
 	```
 8. In the Dev Console, create a **Lightning Event** (File > New > Lightning Event) with the name **recordUpdated**.
 9. Switch back to the **SimilarProperties.cmp** tab.
-10. Replace the line `<aura:handler event="force:refreshView" action="{!c.doInit}" />` the following:
+10. Replace the line `<aura:handler event="force:refreshView" action="{!c.doInit}" />` with the following:
 
 	```html
 	<aura:handler event="c:recordUpdated" action="{!c.doSearch}"/>
