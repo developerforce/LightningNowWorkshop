@@ -27,7 +27,6 @@ title: Using Lightning Components Everywhere
 ### Step 2 - Add a Lightning Component to the Utility Bar
 1. Click the Setup icon and choose Setup.
 2. Click on **Apps** and choose **App Manager**.
-3. Click the Actions dropdown for the **Dreamhouse Classic** app and click **Upgrade**. Name the new application **Dreamhouse Lightning** and click **Save** (this may take a minute to complete).
 3. Click the Actions dropdown for the **Dreamhouse Lightning** app and click **Edit**.
 4. Click the **Utility Bar** section at the top of the screen.
 5. Click the **Add** button and scroll down to Mortgage Calculator.
