@@ -19,6 +19,9 @@ In this exercise you will learn:
 ### Step 2 - Run the Leads Visualforce Page in the Lightning Experience
 
 1. Switch back to the **Lightning Experience**.
+1. Click the Setup icon and choose Setup.
+2. Click on **Apps** and choose **App Manager**.
+3. Click the Actions dropdown for the **Dreamhouse Classic** app and click **Upgrade**. Name the new application **Dreamhouse Lightning** and click **Save** (this may take a minute to complete).
 1. Click the **Leads** tab. The page works but has the Salesforce Classic look and feel.
 1. Right-click on the data table in the page and click **Inspect**.
 1. Locate the `<table>` tag and notice it has a **list** class. Classes are CSS rules that define the look of the items on the page.
