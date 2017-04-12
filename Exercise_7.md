@@ -38,14 +38,15 @@ title: Using Lightning Components Everywhere
 2. Open the **Mortgage Calculator**.
 3. In the component, add `force:lightningQuickActionWithoutHeader` to the **implements** attribute. Don't forget the comma to separate the values from one another.
 4. Save the file.
-5. In **Setup**, choose **Objects and Fields**, then choose **Property**.
+5. In **Setup**, choose **Objects Manager**, then click on the **Property** object.
 6. Scroll down to **Buttons, Links and Actions**.
 7. Click the **New Action** button.
 8. For Action, choose **Lightning Component**.
 9. Notice that **MortgageCalculator** is already selected. The list only shows components that have the **force:lightningQuickAction** or **force:lightningQuickActionWithoutHeader** interface.
-10. Give the component a height of 300px.
-11. Give the component a label of **Mortgage Calculator**.
-11. Click on the Object Manager and choose Property again.
+10. Give the Action a height of 300px.
+11. Give the Action a label of **Mortgage Calculator**.
+12. Save.
+11. Click on the Object Manager and open **Property** object again.
 12. Scroll down to the **Page Layouts** section and click on the **Property Layout**.
 13. Click the **override the predefined actions** link in the **Salesforce1 and Lightning Experience Actions** section.
 14. In the **Property Layout** panel at the top of the page, click the **Salesforce1 and Lightning Actions** item.
