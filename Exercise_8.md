@@ -86,11 +86,11 @@ In this exercise, you will learn how to:
 
 1. Go back to the **PictureGallery** tab and reload the page.
   
-### Step 4 - Load the PictureGallery component in the Visualforce page 
+### Step 4 - Load the PictureCarousel component in the Visualforce page 
 
 1. Go back to the PictureGallery Visualforce page in the Developer console.
 
-1. Add the following code immediately after the existing `$Lightning.createComponent` block to instantiate the **PictureGallery** component.   
+1. Add the following code immediately after the existing `$Lightning.createComponent` block (within the `$Lightning.use("c:PictureGalleryApp"` callback function) to instantiate the **PictureCarousel** component.   
     
     ```js
     $Lightning.createComponent("c:PictureCarousel",
