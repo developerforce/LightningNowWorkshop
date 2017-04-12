@@ -11,6 +11,14 @@ title: Using Lightning Components Everywhere
 
 ### Step 1 - Add more Lightning Components to the Page
 
+> If you didn't upgrade your **Dreamhouse Classic** app to **Dreamhouse Lightning**, you need to do that now.
+> 
+> 1. Click the Setup icon and choose Setup.
+> 
+> 2. Click on **Apps** and choose **App Manager**.
+> 
+> 3. Click the Actions dropdown for the **Dreamhouse Classic** app and click **Upgrade**. Name the new application **Dreamhouse Lightning** and click **Save** (this may take a minute to complete).
+
 1. Navigate to a Property Record Detail page.
 2. Click the Setup icon and choose **Edit Page**.
 3. Drag the **NeighborhoodExplorer**, **Property Map** and **Picture Gallery** components onto the page and place them in the right-hand column.
