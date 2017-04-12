@@ -23,8 +23,11 @@ In this exercise you will learn how to:
 1. Click Save.
 
 ### Step 2 - Adding a Classic Visualforce page to a Lightning page
+1. Select **Properties** Tab
 
-1. Navigate back to a Property Detail page.
+1. Select ** All** Properties in the menu
+
+1. Select **121 Harborwalk Drive** Property
 
 1. Click the Setup menu and choose **Edit Page**.
 
