@@ -266,6 +266,7 @@ title: Data Binding with force:recordPreview (Developer Orgs Only)
 > [SimilarProperty.cmp](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperty/SimilarProperty.cmp), [SimilarPropertyController.js](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperty/SimilarPropertyController.js)
 > ##### SimilarProperties Component
 > [SimilarProperties.cmp](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperties/SimilarProperties.cmp), [SimilarPropertiesController.js](https://github.com/developerforce/LightningNowWorkshop/blob/master/Exercise_6/src/aura/SimilarProperties/SimilarPropertiesController.js), [SimilarPropertiesHelper.js](https://raw.githubusercontent.com/developerforce/LightningNowWorkshop/master/Exercise_6/src/aura/SimilarProperties/SimilarPropertiesHelper.js) 
+>
 > Feel free to check it out or cut and paste it in your own component.
 
 <div class="row" style="margin-top:40px;">
