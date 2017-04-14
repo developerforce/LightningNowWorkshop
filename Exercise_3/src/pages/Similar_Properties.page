@@ -1,5 +1,5 @@
 <apex:page standardController="Property__c" extensions="GetPropertiesApexController" standardStylesheets="false" applyBodyTag="false">
-    <apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed == 'Theme4d'}" />  
+    <apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed == 'Theme3'}" />  
     <apex:outputPanel rendered="{! !lightningDesktop}">
         <apex:pageBlock >
             <apex:pageBlockTable value="{! properties }" var="ct" id="leads_list">
