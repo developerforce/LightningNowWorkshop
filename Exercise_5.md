@@ -221,7 +221,7 @@ In this exercise you will learn how to:
 
 1. On the Property Record Detail page, click the Setup icon and select **Edit Page**.
 
-1. Remove the **SimilarProperties** component and save the page  (**Note: If you skip this, you will get an error while editing the design fil in the future steps**).
+1. Remove the **SimilarProperties** component and save the page  (**Note: If you skip this, you will get an error while editing the design file in the future steps**).
 
 1. Switch back to the Developer Console and add a new line after **line 3** of the **SimilarProperties.cmp** file.
 
