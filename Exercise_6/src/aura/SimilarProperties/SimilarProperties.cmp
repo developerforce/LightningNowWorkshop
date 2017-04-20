@@ -1,4 +1,4 @@
-<aura:component controller="GetSimilarPropertiesApexController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+<aura:component controller="MyPropertyController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
     <aura:attribute name="recordId" type="Id" />
     <aura:attribute name="similarProperties" type="Object[]" />
     <aura:attribute name="searchCriteria" type="String" />
