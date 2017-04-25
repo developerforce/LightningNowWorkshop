@@ -1,7 +1,4 @@
 <apex:page controller="DreamhouseProspects" standardStylesheets="{!isClassic}" applyBodyTag="{!isClassic}">
-
-    <apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed=='Theme4d'}" />
-
     <apex:outputPanel rendered="{!isClassic}">
         <apex:pageBlock >
             <apex:sectionHeader title="Leads" subtitle="Home"/>
@@ -35,5 +32,4 @@
             Leader table goes here
         </div>
     </apex:outputPanel>
-
 </apex:page>
