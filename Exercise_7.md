@@ -21,7 +21,7 @@ title: Using Lightning Components Everywhere
 
 1. Navigate to a Property Record Detail page.
 2. Click the Setup icon and choose **Edit Page**.
-3. Drag the **NeighborhoodExplorer**, **Property Map** and **Picture Gallery** components onto the page and place them in the right-hand column.
+3. Drag the **NeighborhoodExplorer** and **Picture Gallery** components onto the page and place them in the right-hand column.
 4. Explore the components which highlight some of the possibilities with Lightning Components.
 
 ### Step 2 - Add a Lightning Component to the Utility Bar
