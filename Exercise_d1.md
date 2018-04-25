@@ -1,31 +1,40 @@
 ---
 layout: module
 exercise: Exercise 1
-title: Prepare Your Salesforce Environment
+title: Prepare for Your Pilot
 ---
 
-You will be using this environment in the workshop. My Domain must be deployed in your environment in order to complete the Programmatic exercises. 
 
-1. Sign up for the [Lightning Now Tour Workshop developer org](https://developer.salesforce.com/promotions/orgs/lightningnow/).
-2. When you receive your Signup confirmation email, Login to your new org and set your password. 
-3. Define your Domain name in your Lightning Adoption Workshop Org
-	1. From Setup, enter My Domain in the `Quick Find` box, then select **My Domain**.
-	2. Enter the subdomain name you want to use within the sample URL. For example, if a company called Universal Containers uses the subdomain `universalcontainers`, the company’s login URL is `https://universalcontainers.my.salesforce.com/`. Your name can include up to 40 letters, numbers, and hyphens.
-	You can’t use these reserved words for subdomains:
-		1. www
-		2. salesforce
-		3. heroku
-		4. You can’t start the domain name with:
-		5. root
-		6. status
-		7. a hyphen (-)
-	3. Click **Check Availability**. If your name is already taken, choose a different one.
-	4. Click **Register Domain**.
-	5. You receive an email when your domain name is ready for testing. This can take a few minutes.
-   	6. The new subdomain is only available after you **test** and **deploy** it. When you receive the “Your Domain is Ready for Testing” email, go to **Setup** > **My Domain** > and select **Log in** to test your new domain. 
-	7. Once you have used the **Log In** button to test your domain, you can deploy to your users by selecting the **Deploy to Users** button and then clicking **OK**. This makes your domain available and also enables you to use Custom and Managed components to build in Lightning!
+### **1A.  Create and Launch a Trailhead Playground**
 
-4. **Save** this image locally as a JPG, it will be used later for an App logo in the workshop.  [https://en.wikipedia.org/wiki/File:Human-go-home.svg](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjU9f3W46TSAhUC12MKHVNZAFEQjRwIBw&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AHuman-go-home.svg&psig=AFQjCNHZTidjLtzKbVqEq_7zdzS_5Hr4Ew&ust=1487889819345529)
+You will be using a NEW Trailhead Playground in the workshop. In this exercise, we will create and launch your new Trailhead Playground:
+
+
+1. Access the [Install Apps and Packages in your Trailhead Playground](https://trailhead.salesforce.com/modules/trailhead_playground_management/units/install-apps-and-packages-in-your-trailhead-playground) unit in Trailhead.
+2. Click **Challenge** on the right or scroll to the Challenge section at the bottom.
+3. If you have already completed this unit, click on **Retake Challenge**.
+4. Click the **down arrow** next to Launch and click **Create a Trailhead Playground**.
+    1. It will take 5 - 10 minutes to spin up fully.
+5. Once it is ready for use, ensure it is selected and click **Launch**.
+
+### **1B.  Enabling Lightning**
+
+Before we pilot Lightning Experience for Sales end users and start customizing the Sales apps, let’s take some time to get familiar with Lightning Experience.  In the Lightning Experience Migration Assistant, which is available in Setup, you can find tools to help you with this: learning trails, feature comparison charts, ways to preview your customizations in Lightning Experience, how to enable key Lightning Experience features like Notes and News, and finally, how to enable Lightning Experience itself.
+
+In this exercise we will be reviewing the Migration Assistant in our trailhead, but you can use all of these tools in your production Salesforce org to learn more about what your features and customizations will look like in Lightning Experience. The most important parts of the Migration Assistant are the Preview tool and the Readiness Check. The Preview tool allows you to see your apps in Lightning Experience before you actually enable it.
+
+The Readiness Check provides you with a Readiness Report, which includes an itemized list of the features you use and customizations you’ve created, along with explanations about how they will be supported in Lightning Experience or what may need additional review.
+
+1. Click on the **User Icon** in the upper right and click **Switch to Salesforce Classic**.
+2. From the Classic Home page, click **Setup**.
+    1. Click **Get Started** underneath Lightning Experience Migration Assistant.
+        1. Click **Check Readiness**.  Here, you can run a Readiness report, which we will do later on today.
+        2. Click** Preview.** This is where you can **Preview Lightning Experience**
+            1. When finished previewing, click **Exit and Return to the Migration Assistant**
+        3. Click **Optimize with Features**
+            1. Enable **News** and **Notes** by clicking the corresponding buttons
+        4. Click **Turn It On.** This is where you enable Lightning Experience.
+3. Click **Switch to Lightning Experience** link at the top middle of the screen to switch back to Lightning Experience.  
 
 
 <div class="row" style="margin-top:40px;">
