@@ -1,8 +1,6 @@
-#### The **Lightning Now Hands-on Workshop** is part of the [Lightning Now Tour](https://developer.salesforce.com/blogs/developer-relations/2017/03/salesforce-global-lightning-tour-coming-city-near.html).
+#### The **Lightning Now Hands-on Workshop** is part of the [Lightning Now Tour].
 
-After completing the workshop, you will come away with hands-on experience migrating an existing Classic application to Lightning Experience. The exercises will walk you through initial setup, show you how to customize Lightning pages, share strategies for using Visualforce in Lightning Experience, and help you learn how to build Lightning Components for exactly what you need.
-
-The workshop is divided into two sections, Declarative and Programmatic. In order to complete the Programmatic section, you must first complete the Declarative exercises.
+Using clicks, we will prepare your org (Trailhead Playground) for a Lightning Experience pilot and go through the phases of customizing Lightning Experience for your Sales users. In these exercises you will take a look at our standard Sales and Sales Console Apps and Lightning Experience productivity features, perform Record and Home page customizations using standard components, and learn how to assign Lightning Experience to a profile.
 
 #### Pre-Work: Complete Trailhead Modules
 
