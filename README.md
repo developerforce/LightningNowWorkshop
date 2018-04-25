@@ -2,10 +2,14 @@
 
 Using clicks, we will prepare your org (Trailhead Playground) for a Lightning Experience pilot and go through the phases of customizing Lightning Experience for your Sales users. In these exercises you will take a look at our standard Sales and Sales Console Apps and Lightning Experience productivity features, perform Record and Home page customizations using standard components, and learn how to assign Lightning Experience to a profile.
 
-#### Pre-Work: Complete Trailhead Modules
+#### Pre-Workshop Requirements
+To get the most out of this workshop, please complete these Trailhead modules prior to attending this session:
 
-1. Complete the [Lightning Experience Migration Rollout Module](https://trailhead.salesforce.com/modules/lex_migration_rollout) (1hr)
-2. **Extra Credit**: [Migrate to Lightning Experience Trail](https://trailhead.salesforce.com/trail/lex_admin_migration) (6.5hrs) 
+1. Complete the [Learn Salesforce with Trailhead Trail](https://trailhead.salesforce.com/trails/learn_salesforce_with_trailhead) (35min)
+2. [Learn CRM Basics Module] (https://trailhead.salesforce.com/trails/lex_admin_implementation/modules/lex_implementation_basics) (40 minutes)
+3. [Lightning Experience Basics Modue] (https://trailhead.salesforce.com/modules/lex_migration_introduction)(55 minutes)
+4. [App Customization Lite Module] (https://trailhead.salesforce.com/modules/lex_migration_customization) (30 minutes) - optional
+
 
 <p style="background-color: transparent;color: #00A1E1;text-align:center;margin:20px 0;"><a class="btn btn-primary btn-lg" href="TOC.html" role="button">Let's Get Started!</a></p>
 
