@@ -1,47 +1,103 @@
 ---
 layout: module
 exercise: Exercise 4
-title: Customize Business Processes and Report Charts  (30min)
+title: Customize the Opportunity Workspace  
 ---
 
- We can make Declarative customizations to help manage business processes and analytics and then use the Lightning App Builder to make those customizations visible to our end users in Lightning Experience with Standard Lightning Components. For our Dreamhouse users, we are going to define a process for property status using Path and also modify a chart to add to the property page to help our users work with the property records in our next exercise. 
 
-### Path
+### 4A. Create a path on opportunities
 
-Path is a way to visually display the steps in a process, highlight key fields, and provide guidance such as handy links, policy information, and tips for users at each step. We can create a path based on any picklist field on the object to define the process we want to display.
+1. From Setup, enter **Path Settings** in the Quick Find box, then select **Path Settings**.
+    1. Click Edit on the Opportunity Path.  New orgs have default paths setup for Leads and Opportunities.
+    2. Review the settings and Click **Next**.
+        1. Click the **Prospecting** stage.
+            1. Click **+Add/Update Fields.**
+                1. Add **Description** and **Expected Revenue** to the Selected Fields section and **Save.**
+            2. In the **Guidance for Success** text area, add *“Refer to the Sales Playbook for details around Prospecting.”*
+        2. Click the **Needs Analysis** stage.
+            1. Click **+Add/Update Fields**.
+                1. Add **Close Date, Description, and Amount** to the Selected Fields section and **Save.**
+            2. In the **Guidance for Success** text area, add *“Please be sure to update the Close date for this as you move along the sales cycle.”*
+        3. Click **Next**.
+        4. Select **Active **and click** Finish**.
+
+### **4B.  Update Opportunity Highlights Panel**
+
+The Highlights Panel provides important information about a record without clicking into the Details.  It answers the question, “What do my reps need to see at first glance?:”
+
+1. Click the **Object Manager** tab within the Setup Menu.
+2. Select **Opportunity**.
+3. Select **Compact Layouts** and click on the **System Default** label.
+    1. Click **Clone**.
+        1. Label:  **Lightning Highlight Panel**
+        2. Name:  **[this field auto-completes]**
+        3. Adjust the following Fields:
+            1. Remove **Score** from the Selected Fields section.
+            2. Add **Order Number** to the Selected Fields Section.
+    2. Click **Save**.
+
+### **4C.  Create an Update Action To use in our workspace**
+
+Lightning Experience allows us to make updating records easy as pie!  We are going to create an update action that we will use on Accounts and will use on our Opportunity Lightning Record Page.  
+
+1. Click the **Object Manager** tab within the Setup Menu
+2. Select **Account**.
+3. Select **Buttons, Links, Actions**.
+4. Click **New Action**.
+    1. Action Type:  **Update a Record**
+    2. Standard Label Type:  **Update [Record]**
+    3. Name: **Account_Update**
+    4. Click **Save**.
+    5. Drag and drop the **Account Number** field from the top section of the layout menu to the page layout section below (below the Industry field).
+    6. Drag and drop the **Parent** **Account** field from the top section of the layout menu to the page layout section below (below the Website field).
+    7. Click on the **Phone Number** field in the page layout (lower section) and click the **Remove** button.
+    8. Click **Save**.
+
+### **4D.  customize the Opportunity and account Pages using Lightning App Builder**
+
+It's time to customize our opportunity page for our pilot!  This is the last step before preparing our users for the pilot.  Our opportunity page should provide relevant information for our users to do their jobs more efficiently.  
+
+1. Click on Favorites and select the **Express Logistics Portable Truck Generators** opportunity.  
+    1. Click the **Gear icon** in the upper right and select **Edit Page**.
+        1. Click the **Related Record** Component from the left side menu to add to the page.
+            1. Lookup Field:  **Account Name**
+            2. Update Action will auto-populate with Update Account
+        2. Click the **Related List Quick Links** Component from the left side menu to add to the page.
+        3. Click the **Rich Text** Component from the left side menu to add to the page.
+            1. In the text area on the right, enter the message:  *“You are a Winner!!”*
+                1. Format the text to **Font: Tahoma, Size: 20, Text Alignment: Middle, Color: Red**.
+                2. Click **+Add Filter** under Set Component Visibility.
+                    1. Filter Type: Record Field
+                    2. Field:  Stage
+                    3. Operator: Equal
+                    4. Value: Closed Won
+                3. Click **Done**.
+        4. Hover over the Data.com Insights tile on the page layout section and click the X to **remove the Data.com Insights** tile from this page.
+        5. Click **Save**.
+        6. Click **Activate**.
+        7. Click the **Assign as Org Default button** is selected and click **Save**.
+        8. Click **Back** in the upper right corner.
+    2. Within the **Express Logistics Portable Truck Generators** opportunity, click the **Closed stage** on the Sales Path.
+        1. Click the **Select Closed Stage** button.
+        2. Choose **Closed Won **and click** Save.**
+            1. See message displayed
+2. **Update Account Action on Account**
+    1. Click the down arrow next to Opportunities or whichever object is currently displaying and click the **Accounts**. 
+    2. From the Accounts list view, select **All Accounts**
+    3. Select the **Edge Communications** Account
+        1. Click the Gear Icon in the upper right and select **Edit Object**
+            1. Select **Page Layouts**.
+            2. Select **Account Layout**.
+                1. Scroll down to locate the **Salesforce Mobile and Lightning Experience Actions section** in the page layout edit.
+                2. Click **override the predefined actions** text. 
+                3. Within the top section, select the **Mobile & Lightning Actions** menu.
+                4. Find **Update Account** action & drag into **Salesforce Mobile and Lightning Experience Actions** section of the page layout editor.
+                5. Click **Save**.
+    4. Now, let's click on the **Update Account action** and see how it works!
+
+Give yourself a round of applause! You have finished customizing your sales console app for your pilot!
 
 
-1. Create a Path for the Property Object. 
-    1. Setup > User Interface > Path Settings > New Path 
-        1. Path Name: Property Path 
-        2. API Reference Name: Property_Path
-        3. Object: Property 
-        4. Record Type:  — Master— 
-        5. Picklist: Status
-        6. Next 
-    2. Step 2: Select Fields and Provide Guidance for Each Step in the Path 
-        1. Status: Pre-Market 
-            1. Fields: Assessed Value, Broker
-            2. Guidance for Success: “Review the resources to help your client get ready to list their home!”
-        2. Status: Listed
-            1. Fields: Baths, Beds, Date Listed, Price
-        3. Status: Under Contract
-            1. Fields: Broker, Date Agreement
-        4. Next 
-    3. Step 3: Set the Status and Save
-        1. Active
-        2. Save
-
-### Lightning Report Chart
-
-Create a new Report Chart for Property data. We have a report chart that is useful for our users, and we want to make some small edits to the chart so that we can make it available to our users in their new Lightning App. With the Report Chart standard lightning component we can display report charts in Lightning Record pages, Home pages, App pages, and even the Utility Bar.
-
-1. Report Tab &gt; All Reports
-  1. Open **Property Listings** Report
-  2. Edit Chart to Display As:  Scatter Chart
-  3. Edit drop-down &gt; Save
-
-We have created two new elements to add to our Property page with Standard Lightning Components, but we want to add them in the right place. We are going to create a brand new Lightning Console App for our Dreamhouse power users, and add these elements to the property record page for that Lightning App. 
 
 <div class="row" style="margin-top:40px;">
     <div class="col-sm-12">

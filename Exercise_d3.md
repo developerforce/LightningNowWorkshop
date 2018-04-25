@@ -1,106 +1,160 @@
 ---
 layout: module
 exercise: Exercise 3
-title: Make your Classic App available in Lightning Experience & Explore Lightning Experience  (45min)
+title: Make your users more Productive with Productivity Features  
 ---
 
-### Make Classic Dreamhouse App Available In Lightning Experience
+We are on the way to a fully customized Sales Console App for our pilot and what's better is to discover some of the features that make Lightning Experience more productive for your users.  Users will be able to analyze data in their views without creating a report and be able to answer real-time analytical questions.  We will also see how we can make their data work for them.  So, let's get started.
 
-Lightning Experience is now enabled in your environment!  Time to make your custom app, Dreamhouse Classic, available to your Lightning Experience users.  If you are just getting started with Lightning Experience and want to explore what your Classic app will look like, we can do this with just a few clicks. However, while this is a fast and easy way to make your Classic app visible in Lightning Experience, it will still have some limitations. Later on we'll finish our Lightning Experience migration by creating a brand new Lightning app for Dreamhouse. 
+### 3A. Discovering the Power of List Views
 
-1. First, switch to Lightning Experience for yourself so you can start exploring and building. When you enable Lightning Experience for yourself and your users, all users will still have the option to switch back and forth between Lightning Experience and Salesforce Classic experience from the profile menu.  ![screenshot](images/ex3.1.gif)
-    1. Your profile menu drop down at top right of page > **Switch to Lightning Experience**
-2. Make your Classic app visible in Lightning Experience and add some additional tabs. This does not impact the app experience for our Salesforce Classic users, but it makes the current Classic app visible to Lightning Experience users in the App Launcher. Notice that there is also an option to “Upgrade” your custom app when you are in the App Manager. The upgrade option creates a new Lightning app clone of your Classic app. 
-    1. All Setup (gear icon) > Apps > App Manager > **Dreamhouse Classic** > Edit > Select the “Show in Lightning Experience” Checkbox.
-    2. In the Choose the Tabs box, select the **Chatter, Dashboard** & **Reports** tabs and move to the Selected Tabs box. 
-    3. Save
+List views in Lightning Experience have many new features to explore!
+
+1. Starting in the **Sales Console App:**
+    1. Let's create a List View Chart.  Click the ⬇️ next to **Opportunities** (or which ever object is listed) and click **Leads**.
+        1. If you are in the Split View, click the split view icon and click Table.
+        2. Click the down arrow next to Recently Viewed and click **All Open Leads**.
+            1. Click the **Charts icon**.
+            2. Click the ⚙️ underneath the current chart. 
+            3. Click **New Chart** and add the following information:
+                1. Chart Name: **Leads by Status**
+                2. Chart Type: **Vertical Bar Chart**
+                3. Aggregate Type: **Count**
+                4. Aggregate Field: **Lead Status**
+                5. Grouping Field: **Industry**
+            4. Click **Save**.
+            5. Click the down arrow next to Leads by Status and click **Leads by Lead Source**.  You can have multiple charts and switch between them.
+        3. Let's update Bertha's email address.  Within the All Open Leads list, hover over **Bertha Boxer's email address**.
+            1. Click the ✏️ .
+            2. Update her email address to** **bboxer@fcof.net.**
+            3. Click anywhere outside of the email box then click **Save** at the bottom of the screen.
+        4. Let's send a list email.  Click the ✅ next to **Bertha Boxer**, **Betty Bair**, **Brenda Mcclure**, **David Monaco**, and **Jeff Glimpse**.
+            1. Click the ⬇️ next to Add to Campaign and click **Send List Email**.
+            2. In the bottom right of the content screen, click on **insert, create, or update template icon**.
+            3. Click **Insert a template**.
+            4. Click the ⬇️ next to My Lightning Templates.
+            5. Click **Classic Email Templates**.
+            6. Click **MARKETING: PRODUCT INQUIRY RESPONSE**.
+            7. Click **Send**.
+        5. Now, let's verify that the email was sent.
+            1. Click on **Berth Boxer**.
+            2. In her Activity Timeline, click **GenWatt: Thanks for your inquiry**.  You can view the email here along with who it was sent to.  You also will receive an email with a direct link to this email.
+    2. Let's update multiple records usin**g Inline editing.**
+        1. In the Navigation bar, click the **down arrow** next to Leads and click **Opportunities**.
+        2. Click the **down arrow** next to Recently Viewed and click **All Opportunities**.
+            1. If your screen is in split view, click the **down arrow** next to the **split view icon** and click **Table**.
+        3. Click the check box next to **Dickenson Mobile  Generators**, **Edge Emergency Generator** (both of them), **Edge Installation**, and **Edge SLA**.
+            1. Hover over the **Close Date** for **Dickenson Mobile Generators**.
+            2. Click the ✏️.
+            3. Change the date to **next Friday's date**.
+            4. Check the **Update 5 selected items box**.
+            5. Click **Apply** then click **Save** at the bottom of the screen.
+        4. Click the **down arrow** next to the **table icon and** click **Kanban**.  The Kanban view displays a visual summary for a selection of records. By seeing all your records at once, users can more effectively monitor their work and keep business processes moving forward. Switch to the Kanban view for almost any object from the object’s list view.
+            1. Hover over the **Grand Hotels Kitchen Generator box**, then **click and drag** it from Id. Decision Makers to **Perception Analysis**. 
+            2. Click the **down arrow** next to the **list view controls icon**.
+            3. To set up Kanban, click **Kanban Settings**.
+                1. Change Group By from Stage to **Lead Source**.
+                2. Click **Save**.
+                3. Notice how nothing changed.  Click the **Refresh icon** and your changes will be reflected.
+        5. Finally, let's see how easy it is to log a call in Lightning Experience.
+            1. Click on **Grand Hotels Kitchen Generator box**.
+            2. From the **Activity** section, click the **Recap your call... box** underneath **Log a Call** and add the following information:
+                1. **Subject:** Tried to determine key decision makers
+                2. **Comments:** Found out that Karl Thomas will be involved and definitely needs to see a demo.  I was unable to verify his specific role.
+                3. Click the **Search Contacts** box and click **Add New Contact**.
+                    1. First Name: **Karl**
+                    2. Last Name: **Thomas**
+                    3. Account Name: **GenePoint**
+                    4. Description: **Decision Maker**
+                    5. Click **Save**.
+                4. Click **Save** to save the activity.  Notice in your Past Activity it shows what you just did.
+            3. Click the **Chatter** tab.  The call you logged was posted to this opportunity.
+
+### **3B. Create a Calendar with my data**
+
+Calendars now allow you to put more than events on it.  You can create a calendar with all of your opportunities by close date:
+
+1. Click the ⬇️ next to Opportunities and click **Calendar**.
+    1. Click the ⚙️ next to My Calendars and click **New Calendar**.
+        1. Select the **Opportunity** object and click **Next**.
+            1. Calendar Name: **Opportunities Closing This Month**
+            2. Field for Start: **Close Date**
+            3. Field Name to Display: **Name**
+            4. Click **Save**.
+    2. On the Calendar click **Today**.  You should see Burlington Textiles Weaving Plant Generators.
+    3. Click the **down arrow** next to the** calendar icon** and make certain **Week** is checked.  If it isn't, click Week.
+    4. Click the **right arrow** to view next week.  You should see the five opportunities closing next Friday.
+
+### **3C. The New Lightning Report Builder**
+
+Turn on the Lightning report builder and give your users a powerful, intuitive tool for analyzing Salesforce data. Group, filter, and summarize records to answer business questions easily.  
+
+1. In the upper right hand corner, click on the ⚙️ and click **Setup**.
+2. In the **Quick Find** box, type **Reports**.
+3. Click **Reports and Dashboards Settings**.
+    1. Check **Enable Lightning Report Builder (Beta)**.
+    2. Click **Save**.
+4. In the Quick Find box, type **Permission**.
+    1. Click **Permission Sets**.
+    2. Click **New**.
+        1. Label: **Lightning Report Builder**
+        2. API: **[this field auto-completes]**
+        3. Descriptions: **Grants access to the Lightning Report Builder.**
+        4. Click **Save**.
+    3. Click **System Permissions**.
+        1. Click **Edit**.
+        2. Check **Report Builder (Lightning Experience)**, this will auto-check **Run Reports**.  Leave both checked.
+        3. Click **Save**.
+    4. Click **Management Assignments**.
+        1. Click **Add Assignments**.
+        2. Check the box next to **Your Name** and click **Assign**.
+        3. Click **Done**.
+5. Now, let's create a New Report Using Lightning Report Builder
+    1. Click the **App Launcher** and select **Sales Console App**.
+    2. Click the **down arrow** next to Opportunities (or whatever object is currently displaying) and click **Reports**.
+    3. Click **New Report**.
+    4. Click Opportunities on the left (this will highlight Opportunities on the right, leave that selected) and click **Continue**.
+    5. Click the **down arrow** next to **Stage** and click **Group Rows by this Field**.
+    6. Click the **down arrow** next to **Amoun**t, hover over **Summarize**, and click **Sum**.
+    7. At the bottom of the screen click the **Subtotals toggle** to shut them off.
+    8. Toggle off and on the other options, just to see what they do.
+    9. In the upper left, click on **Filters**.
+    10. Click **Close Date**.
+    11. Change the Range to **All Time** and click **Apply**.
+    12. Click the **Add Chart Button**.
+    13. Click the ⚙️ in the upper right of the chart.
+        1. Chart Type: **Funnel**
+        2. Chart Title: **Opportunities Funnel** 
+        3. Value: **Sum of Amount**
+    14. Click the ⚙️ in the upper right of the chart.
+    15. Click **Save & Run**.
+    16. Name the report **Opportunities by Stage** and click **Save**.
+
+### **3D.  Create a Chatter Stream**
+
+Chatter Streams is where your users can create curated lists of records and people to follow. Create up to five Chatter streams that combine posts from different feeds and different feed types. Combine feeds from people, groups, and records, like your accounts, opportunities, and cases.
 
 
+1. Click the **down arrow** next to **Opportunities**  in the items list or whichever object is currently displayed and click on **Chatter**.
 
-### Explore Lightning Experience End User Features 
+    1. Click the **+** next to **STREAMS**.
+    2. Name the stream **Important Accounts & Opps**.
+    3. In the **Search Accounts...** **box** type **Edge**.
+        1. Click **Edge Communications**.
+    4. In the **Search Accounts... box** type **Burlington**.
+        1. Click **Burlington Textiles Corp of America**.
+    5. Click the **down arrow** next to the **Accounts icon** and click **Opportunities**.
+        1. In the **Search Opportunities**... box type **Edge**.
+            1. Click the first **Edge Emergency Generator** opportunity that appears in the list.
+        2. In the **Search Opportunities**... box type Burlington.
+            1. Click **Burlington Textiles Weaving Plant Generator**.
+        3. In the **Search Opportunities... box** type **GenePoint**.
+            1. Click **GenePoint Lab Generators**.
+    6. Click **Save**.
 
-Now with just a few clicks you've made your Classic app visible in Lightning Experience. Let's take a look at what this app looks like in Lightning Experience and explore some of the end user features immediately available in Lightning Experience. These are features that your end users can take advantage of right away with basic user training. 
-
-#### Lightning Experience App Launcher
-
-All of your Lightning apps, including your Classic apps that are marked as **Visible in Lightning Experience** can be found in the App Launcher. The App Launcher is also where your users can access all the tabs they have access to, whether or not they are included in a Lightning app. Navigate to your Classic app in Lightning Experience using the App Launcher. [screenshot](images/ex3.2.gif)
-
-1. App Launcher > Review the apps that are available, notice that the tabs are available just below the App icons. 
-2. App Launcher > Click into the **Dreamhouse Classic** App block 
-
-#### Chatter
-
-Now that we are in the Lightning Experience view for the Dreamhouse Classic App, lets get oriented to the new experience and navigation, starting with Chatter. (images/ex3.4.gif)
-
-1. Chatter Tab
-2. Click on **Company Highlights.** Company Highlights will show trending, new and popular posts from across your organization even if you are not following the related records. 
-3. **Chatter Streams.** Chatter Streams is where your users can create curated lists of records and people to follow. Create up to five Chatter streams that combine posts from different feeds and different feed types. Combine feeds from people, groups, and records, like your accounts, opportunities, and cases. 
-    1. Chatter Streams 
-        1. Name: Top Properties & Brokers
-        2. Include in Stream
-            1. Properties: 121 Harborwalk Drive & 127 Endicott St
-            2. Users: Angela Agent, Randy Realtor
-            3. Save. You now have a brand new, curated Chatter Stream that allows you to quickly get to the relevant updates for a specific set of records, even if you are not following those records. 
-
-#### Search 
-
-Lightning Experience has expanded Search functionality. When you know which object you want to search, start typing the name of the object in the search box. You have the option to limit your search to that object. This feature works only for your most frequently used objects, objects in the navigation bar, and Chatter. You can search one object at a time. Let's explore Search in Lightning Experience (images/ex3.5.gif)
-
-1. Click Search Bar. In Lightning Experience your recent items will now be accessible in a drop down from your global search bar. 
-2. Type “Accounts”.  You will see now see the option to Search the string “Accounts”, search within the tab you are currently on (Chatter), or to define your search to the Account object. 
-3. Select Limit **Search to Account**. This limits your search to within the Account object. Now type “Edge” and hit enter. 
-4. Click on Top Results to see results from multiple objects. 
-5. Click on the Account record **Edge Communications**
-
-#### Favorites
-
-If you’re familiar with customizing tab sets in Salesforce Classic, you’ll like the way you can personalize your navigation with Favorites. Favorites let you quickly access important records, lists, groups, dashboards, and other frequently used pages in Salesforce. They’re similar to bookmarks in a web browser but better because your favorites are available no matter which browser or computer you use to log into Lightning Experience.
-
-1. While viewing the Account record for Edge Communications **Select the star in the upper right of the Lightning Experience header** to add the current record to your favorites list.
-2. You can manage Favorites right from the Favorites menu. Select the Favorites star drop-down menu to view your favorites, and click **Edit Favorites** to rename, reorder, or remove Favorited items. 
-3. Select **Done**.
+That's it! Your users should have a good handle on all of these features after you show them how to be more productive in Lightning Experience!
 
 
-
-#### Navigation, List View Charts, & Kanban 
-
-The Navigation bar and List Views in Lightning Experience have new features to explore as well
-
-1. Select the drop-down next to the Properties tab. In the drop-down you can create new records, view favorites for this object, or select a list view.
-2. Click on **Top Listings** list view.
-3. Edit some property records from your list view, you can also try editing list view records without your mouse using your Arrow Keys + Enter.
-4. In Lightning Experience, your users also have new ways to access records and visualize the records in a list view. Let's take a look. 
-    1. Chart Icon > gear icon below existing chart > New Chart > Create a new chart for your list view
-        1. Name: Average Assessment by Status
-        2.  Chart Type: Vertical Bar Chart
-        3. Aggregate Type: Average
-        4. Aggregate Field: Assessed Value
-        5. Group Field: Status
-        6. Save
-
-Now that we have added a new chart visualization for our list view, lets look at a new way for users to view and interact with the records with the **Kanban View**. The Kanban view displays a visual summary for a selection of records. By seeing all your records at once, users can more effectively monitor their work and keep business processes moving forward. Switch to the Kanban view for almost any object from the object’s list view. The Kanban view isn’t available on a few objects, such as knowledge and tasks and is also not available on the **Recently Viewed** list view for an object. 
-
-1. Select the icon ![screenshot](images/ex3.2.png)
-1. Display As: **Kanban View**
-    1. Play with Kanban by dragging & dropping records to a different status. 
-
-#### Calendar
-
-In Lightning Experience, anyone can create a calendar from a standard or custom object by choosing a date field representing data they want to track. The calendar displays data in that field as calendar items. Users can customize most calendars by applying a list view, and they can edit and delete calendars they’ve created.
-
-1. App Launcher > Calendar Tab (This can be found in the **All Items** area below the Lightning apps in your App Launcher or by searching in the App Launcher search window)
-2. Select the Gear Icon next to “My Calendars” for **New Calendar**. ![screenshot](images/ex3.3.gif)
-    1. Object: Property 
-    2. Next 
-    3. Calendar Name: Top Listings 
-    4. Field for Start: Date Listed
-    5. Field for end: None
-    6. Apply a Filter: Top Listings
-    7. Field Name to Display: Property Name
-    8. Save
-3. Select Options arrow for your new **Top Listings** calendar and select a new custom color from the palette 
-4. In the top right of your calendar tab, change the calendar date range view from Week to **Month**
-5. Favorite this tab
 
 
 <div class="row" style="margin-top:40px;">
