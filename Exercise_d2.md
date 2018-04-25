@@ -167,9 +167,10 @@ We've explored the console app, now let's customize it for your pilot sales user
         
         1. Click **Cases**.
           
+          
           1. Click the ⬇ next to Recently Viewed and click **All Open Cases**.
-            
             2. Click case **00001002**.  Notice how the case appears as a subtab within the United Oil & Gas Corp. account.  This is because case 00001002 is associated to that account.  
+            
             
             3. Click the **United Oil & Gas Corp** subtab to the left of the 00001002 case subtab.  You can toggle back and forth between the account and case records.
             
