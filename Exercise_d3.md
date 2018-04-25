@@ -11,41 +11,66 @@ We are on the way to a fully customized Sales Console App for our pilot and what
 List views in Lightning Experience have many new features to explore!
 
 1. Starting in the **Sales Console App:**
-    1. Let's create a List View Chart.  Click the ⬇️ next to **Opportunities** (or which ever object is listed) and click **Leads**.
+    
+    1. Let's create a List View Chart.  Click the ⬇️ next to **Opportunities** (or which ever object is listed) and click **Leads**.
+        
         1. If you are in the Split View, click the split view icon and click Table.
+        
         2. Click the down arrow next to Recently Viewed and click **All Open Leads**.
+            
             1. Click the **Charts icon**.
-            2. Click the ⚙️ underneath the current chart. 
+            
+            2. Click the ⚙️ underneath the current chart. 
+            
             3. Click **New Chart** and add the following information:
                 1. Chart Name: **Leads by Status**
                 2. Chart Type: **Vertical Bar Chart**
                 3. Aggregate Type: **Count**
                 4. Aggregate Field: **Lead Status**
                 5. Grouping Field: **Industry**
+            
             4. Click **Save**.
+            
             5. Click the down arrow next to Leads by Status and click **Leads by Lead Source**.  You can have multiple charts and switch between them.
+        
         3. Let's update Bertha's email address.  Within the All Open Leads list, hover over **Bertha Boxer's email address**.
-            1. Click the ✏️ .
-            2. Update her email address to** **bboxer@fcof.net.**
+            
+            1. Click the ✏️ .
+            
+            2. Update her email address to** **bboxer@fcof.net.**
+            
             3. Click anywhere outside of the email box then click **Save** at the bottom of the screen.
-        4. Let's send a list email.  Click the ✅ next to **Bertha Boxer**, **Betty Bair**, **Brenda Mcclure**, **David Monaco**, and **Jeff Glimpse**.
-            1. Click the ⬇️ next to Add to Campaign and click **Send List Email**.
+       
+       4. Let's send a list email.  Click the ✅ next to **Bertha Boxer**, **Betty Bair**, **Brenda Mcclure**, **David Monaco**, and **Jeff Glimpse**.
+            
+            1. Click the ⬇️ next to Add to Campaign and click **Send List Email**.
+            
             2. In the bottom right of the content screen, click on **insert, create, or update template icon**.
             3. Click **Insert a template**.
-            4. Click the ⬇️ next to My Lightning Templates.
+            
+            4. Click the ⬇️ next to My Lightning Templates.
+            
             5. Click **Classic Email Templates**.
-            6. Click **MARKETING: PRODUCT INQUIRY RESPONSE**.
+           
+           6. Click **MARKETING: PRODUCT INQUIRY RESPONSE**.
+            
             7. Click **Send**.
+        
         5. Now, let's verify that the email was sent.
+            
             1. Click on **Berth Boxer**.
-            2. In her Activity Timeline, click **GenWatt: Thanks for your inquiry**.  You can view the email here along with who it was sent to.  You also will receive an email with a direct link to this email.
-    2. Let's update multiple records usin**g Inline editing.**
+           
+           
+           2. In her Activity Timeline, click **GenWatt: Thanks for your inquiry**.  You can view the email here along with who it was sent to.  You also will receive an email with a direct link to this email.
+   
+   2. Let's update multiple records usin**g Inline editing.**
         1. In the Navigation bar, click the **down arrow** next to Leads and click **Opportunities**.
         2. Click the **down arrow** next to Recently Viewed and click **All Opportunities**.
             1. If your screen is in split view, click the **down arrow** next to the **split view icon** and click **Table**.
         3. Click the check box next to **Dickenson Mobile  Generators**, **Edge Emergency Generator** (both of them), **Edge Installation**, and **Edge SLA**.
             1. Hover over the **Close Date** for **Dickenson Mobile Generators**.
-            2. Click the ✏️.
+            
+            2. Click the ✏️.
             3. Change the date to **next Friday's date**.
             4. Check the **Update 5 selected items box**.
             5. Click **Apply** then click **Save** at the bottom of the screen.
@@ -75,9 +100,13 @@ List views in Lightning Experience have many new features to explore!
 Calendars now allow you to put more than events on it.  You can create a calendar with all of your opportunities by close date:
 
 1. Click the ⬇️ next to Opportunities and click **Calendar**.
-    1. Click the ⚙️ next to My Calendars and click **New Calendar**.
-        1. Select the **Opportunity** object and click **Next**.
+    
+    1. Click the ⚙️ next to My Calendars and click **New Calendar**.
+       
+       1. Select the **Opportunity** object and click **Next**.
+            
             1. Calendar Name: **Opportunities Closing This Month**
+            
             2. Field for Start: **Close Date**
             3. Field Name to Display: **Name**
             4. Click **Save**.
