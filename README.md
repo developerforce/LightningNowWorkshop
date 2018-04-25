@@ -1,4 +1,4 @@
-#### The **Lightning Now Hands-on Workshop** is part of the Lightning Now Tour.
+#### The **Lightning Now Hands-on Workshop** is part of the [Lightning Now Tour](https://developer.salesforce.com/events/workshops/lightning-now-sales-admin/).
 
 Using clicks, we will prepare your org (Trailhead Playground) for a Lightning Experience pilot and go through the phases of customizing Lightning Experience for your Sales users. In these exercises you will take a look at our standard Sales and Sales Console Apps and Lightning Experience productivity features, perform Record and Home page customizations using standard components, and learn how to assign Lightning Experience to a profile.
 
