@@ -6,9 +6,9 @@ Using clicks, we will prepare your org (Trailhead Playground) for a Lightning Ex
 To get the most out of this workshop, please complete these Trailhead modules prior to attending this session:
 
 1. Complete the [Learn Salesforce with Trailhead Trail](https://trailhead.salesforce.com/trails/learn_salesforce_with_trailhead) (35min)
-2. [Learn CRM Basics Module] (https://trailhead.salesforce.com/trails/lex_admin_implementation/modules/lex_implementation_basics) (40 minutes)
-3. [Lightning Experience Basics Modue] (https://trailhead.salesforce.com/modules/lex_migration_introduction) (55 minutes)
-4. [App Customization Lite Module] (https://trailhead.salesforce.com/modules/lex_migration_customization) (30 minutes) - optional
+2. Earn the [Learn CRM Basics Badge](https://trailhead.salesforce.com/trails/lex_admin_implementation/modules/lex_implementation_basics) (40 minutes)
+3. Earn the [Lightning Experience Basics Badge](https://trailhead.salesforce.com/modules/lex_migration_introduction) (55 minutes)
+4. Earn the [App Customization Lite Badge](https://trailhead.salesforce.com/modules/lex_migration_customization) (30 minutes) - optional
 
 
 <p style="background-color: transparent;color: #00A1E1;text-align:center;margin:20px 0;"><a class="btn btn-primary btn-lg" href="TOC.html" role="button">Let's Get Started!</a></p>
