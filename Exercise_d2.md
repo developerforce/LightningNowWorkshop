@@ -166,11 +166,17 @@ We've explored the console app, now let's customize it for your pilot sales user
     2. Click the ⬇️ next to Leads.  You can now select Cases and Forecasts, but can no longer select Campaigns.
         
         1. Click **Cases**.
-        2. Click the ⬇ next to Recently Viewed and click **All Open Cases**.
+        
+        2. Click the ⬇ next to Recently Viewed and click **All Open Cases**.
+        
         3. Click case **00001002**.  Notice how the case appears as a subtab within the United Oil & Gas Corp. account.  This is because case 00001002 is associated to that account.
+        
         4. Click the **United Oil & Gas Corp** subtab to the left of the 00001002 case subtab.  You can toggle back and forth between the account and case records.
+        
         5. Click the ⬇️ next to the **United Oil & Gas Co.** at the top of the screen and click **Pin Tab**.  Notice that it is the Account that is pinned, not the case.  The case is a subtab of the pinned account.
+        
         6. In the Utility Bar at the bottom of the screen, click **Announcements**.  You can view the announcement you added.
+            
             1. Minimize **Announcements**.
     
     3. Click on the pinned tab with the **Lightning Feedback Group** and the ⬇️ next to Cases and click **Chatter**.in the URL bar at the top of the page, **highlight the URL** and **copy the link** for use in the next section.
