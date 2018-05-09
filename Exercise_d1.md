@@ -28,8 +28,13 @@ The Readiness Check provides you with a Readiness Report, which includes an item
 1. Click on the **User Icon** in the upper right and click **Switch to Salesforce Classic**.
 2. From the Classic Home page, click **Setup**.
     1. Click **Get Started** underneath Lightning Experience Migration Assistant.
-        1. Click **Check Readiness**.  Here, you can run a Readiness report, which we will do later on today.
-        2. Click** Preview.** This is where you can **Preview Lightning Experience**
+        1. Click **Check Readiness.**  Here, we will run a Readiness report.
+            1. Click the **Check Readiness button**
+            2. If an **Allow Access?** screen pops up, click **Allow**.
+            3. Click **Sales Cloud** and click **Check Readiness**.
+            4. Close the pop-up window.
+            5. You will receive an email letting you know your files are ready for review.  Both documents are added as Files within Salesforce.  It might take 5 minutes for them to appear but we will come back to this later.
+        2. Click **Preview.** This is where you can **Preview Lightning Experience**
             1. When finished previewing, click **Exit and Return to the Migration Assistant**
         3. Click **Optimize with Features**
             1. Enable **News** and **Notes** by clicking the corresponding buttons
