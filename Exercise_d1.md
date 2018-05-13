@@ -16,6 +16,10 @@ You will be using a NEW Trailhead Playground in the workshop. In this exercise, 
 4. Click the **down arrow** next to Launch and click **Create a Trailhead Playground**.
     1. It will take 5 - 10 minutes to spin up fully.
 5. Once it is ready for use, ensure it is selected and click **Launch**.
+6. Lastly, we will download a logo for use in Exercise 2:
+    1. Go to this [**Wikipedia Page**](https://en.wikipedia.org/wiki/File:Emblem-money.png).
+        1. Right Click on the Image and click **Save Image As**.
+        2. Save the Image to your **Desktop**.
 
 ### **1B.  Enabling Lightning**
 
