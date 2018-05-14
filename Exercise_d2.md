@@ -4,128 +4,64 @@ exercise: Exercise 2
 title: Customize Your Home Page 
 ---
 
-### **2A.  Introduction to Standard Sales App**
+### **2A.  Introduction to the Sales Console App**
 
-Lightning Experience comes automatically configured with standard Apps in addition to your custom Apps that have already been created in Salesforce Classic.  As we prepare for our pilot in our Trailhead Playground, lets take a look at what the standard Sales app and Sales Console app looks like in Lightning Experience and explore some of the end user features immediately available in Lightning Experience. These are features that your end users can take advantage of right away with basic user training.
-
-1. Let's explore the Global Toolbar, Home Screen, and App Launcher in the Sales App
-    
-    1. Lets start in the upper right hand corner.  Click on the **down arrow** next to the ⭐️.  This is where items that you favorite are located.  We will add some favorites in a few minutes.
-    
-    2. Click the ➕.  These are your global actions to make it easy for you to log calls, create cases, and more.
-   
-   3. Click the ？.  This is the Help & Training section and where you can access help documentation, suggested Trailhead content, and view additional resources.
-   
-   4. Click the ⚙️ .  This is where you can access Setup, the Developer Console, and depending on where you are at, you might also be able to edit the page or the object.
-   
-   5. Click the **Bell icon**.  This is where you will see notifications sent to you.
-   
-   6. Click the **Profile Image** in the upper right.  As you saw previously, this is where you can switch to Classic, but you can also access your personal settings.
-   
-   7. In the Navigation Bar, click **Home**.  The home screen is made up of Components that you can customize.  You will see how this done later on today.
-    8. Click the **App Launcher** **#**.  This allows you to change the App you are using as well as access individual items.
-        1. Click **Service**.  Notice how the navigation bar objects change.
-        2. Click the **App Launcher icon** and select **Sales**.
-2. Now let's take a look at the Opportunity Workspace:
-    1. In the Navigation bar, click on **Opportunities**.
-        1. Click the down arrow next to Recently Viewed and click **All Opportunities.**
-        2. Click **GenePoint Lab Generators.**
-            1. Review the different sections of the Page:
-                1. At the top you have the **Highlights Panel**.  Click the down arrow next to the New Case/New Note action.  You have several additional actions than you can select from here.
-                2. On the left you have **Details, Activity,** and **Chatter**, from which you can schedule a task, an event, send an email, log a call, and chat about this account.  You can also view previous activity related to this account.
-                3. Click **Details**.  You see all of the details of the Opportunity record..
-                4. On the right you have the **Related** lists down the page.
-            2. Hover your mouse over **GenePoint**.  See how basic account information appears at the top and the opportunities and case related lists appear. 
-            3. Hover your mouse over each of the stages in the **Sales Path**.  This makes it very easy to track what stage in your Sales Process this opportunity is in.  
-    2. Now, let's look at an Account:
-        1. From the GenePoint Lab Generators record, click on **GenePoint**.
-            1. Notice the different layout.
-                1. Click **Details**.  You see all of the details of the account here, not just the basic information when you were looking at it from the Opportunity record.
-                2. Click **News**.  As we enabled News earlier, you will now see this tab appear where you can view news related to this account.
-                3. On the right you have **Activity** and **Chatter**, from which you can schedule a task, an event, send an email, log a call, and chat about this account.  You can also view previous activity related to this account.
-3. Now that we have reviewed the Opportunity Workspace, let's personalize our Navigation Bar to add some items that are important to us:  
-    1. In the Navigation bar, click on **Accounts**
-        1. Click the down arrow next to Recently Viewed and click **My Accounts**
-            1. Click the down arrow on** Accounts** and click **+ Open in New Tab**
-            2. Click the down arrow on the **My Accounts** *tab and click **+ Add to Nav Bar**
-        2. Click the **Edge Communications** account to access the record
-            1. Click the down arrow on Accounts and click **+ Open in New Tab**
-            2. Click the down arrow on the ****Edge Communications*** account record and click **+ Add to Nav Bar**
-        3. Click the pencil icon on the right of the navigation bar to see the contents of the Nav Bar.
-4. We've used our list views to find records up until now.  Let's see what Search is all about in Lightning Experience:
-    1. In the **Search Salesforce** box, type **Accounts**.
-        1. Click **Limit Search to Accounts**. This limits the search to the object specified.
-        2. Next to Accounts type **Edge**.
-        3. Click on **Edge Communications**.
-    2. In the Search Salesforce Box, type **Opportunities**.
-        
-        1. Click Limit Search to **Opportunities**.
-       
-       2. Next to Opportunities type **Express**.
-       
-       3. Click on **Express Logistics Portable Truck Generators**.
-5. Another way to quickly access a record is to use Favorites:
-    
-    1. Click on the ⭐️to Add the Express Logistics Portable Truck Generators to your Favorites.
-    
-    2. We can even add a list view to our favorites:
-        
-        1. From the Navigation bar, click **Accounts**.
-            1. Click the down arrow next to Recently Viewed and click **My Accounts**.
-            
-            2. Click on the ⭐️ to add the My Accounts list view to your Favorites.
-   
-   3. Click the down arrow next to the ⭐️ to view the two items in your favorites list.
-        1. Click **Edit Favorites**. 
-        2. Click the **Pencil icon** next to **Express Logistics Portable Truck Generators**.
-        
-        3. Rename it to **ELP Truck Generators** and click **Done**.
-        
-        4. Click the down arrow next to the ⭐️ icon to view your renamed favorite item.
-
-### 2B. Introduction to the Sales Console App
+Lightning Experience comes automatically configured with standard Apps in addition to your custom Apps that have already been created in Salesforce Classic.  As we prepare for our pilot in our Trailhead Playground, lets take a look at what the Sales Console app looks like in Lightning Experience.  
 
 There are times where you are performing multiple actions at the same time. From working leads, logging calls, updating opportunities, adding contacts, and changing statuses, this means that you are back and forth between multiple records. The Sales Console App makes this task much simpler, as you can open multiple records at the same time, jump quickly from object to object, and log activity very simply. Here you learn what you can do with the Sales Console App, plus more importantly how can you configure it to meet your business needs. Let's jump in and see how this time saver works!
 
-
 1. Click the **App Launcher** and select **Sales Console.**
-    1. Let's pin a few items to ensure they are always open in the Console
+    1. Let's pin the Home Page to ensure it is always open in the Console.
         1. Click the down arrow next to the object name and click **Home**.
             1. Click the down arrow next to Home and click **Pin tab**.
-        2. Click the down arrow next to Home and click **Leads.**
-            1. Click the down arrow next to Recently Viewed and click **All Open Leads.**
-            2. Find **Bertha Boxer** and then click on the lead.
-            3. Click the down arrow next to **Bertha Boxer** and select **Pin tab**.
     
-    2. Click the down arrow next to **Leads** and click **Chatter**.
-        
-        1. Click the ➕ symbol next to Recent Groups to create a new group to collect pilot feedback:
+    2.  Now, let's explore Chatter and and one of its new features, **Chatter Streams**.  Chatter Streams is where your users can create curated lists of records and people to follow. Create up to five Chatter streams that combine posts from different feeds and different feed types. Combine feeds from people, groups, and records, like your accounts, opportunities, and cases.
+
+
+          1. Click the **down arrow** in the items list and click on **Chatter**.
+
+           1. Click the **+** next to **STREAMS**.
+           2. Name the stream **Important Accounts & Opps**.
+           3. In the **Search Accounts...** **box** type **Edge**.
+              1. Click **Edge Communications**.
+           4. In the **Search Accounts... box** type **Burlington**.
+              1. Click **Burlington Textiles Corp of America**.
+           5. Click the **down arrow** next to the **Accounts icon** and click **Opportunities**.
+              1. In the **Search Opportunities**... box type **Edge**.
+                 1. Click the first **Edge Emergency Generator** opportunity that appears in the list.
+              2. In the **Search Opportunities**... box type Burlington.
+                 1. Click **Burlington Textiles Weaving Plant Generator**.
+              3. In the **Search Opportunities... box** type **GenePoint**.
+                 1. Click **GenePoint Lab Generators**.
+           6. Click **Save**.
+    
+           While we are here, let's create a feedback group for our users to use when they want to tell us how great Lightning is!
            
-           1. Name: **Lightning Feedback**
+           1. Click the ➕ symbol next to Recent Groups to create a new group to collect pilot feedback:
+           
+            1. Name: **Lightning Feedback**
             2. Description: **Group for Lightning Pilot Feedback**
             3. Access: **Public**
             4. Leave all other items defaulted
             5. Click **Save & Next.**
             6. Click **Next** and then click **Done.**
             7. Click the down arrow next to Lightning Feedback tab and click **Pin tab.**
-    3. In the Utility bar at the bottom left , click **History** to view the recent tabs you've had opened.  
+            
+ 2. In the Utility bar at the bottom left, you will find components that are available no matter where you are in the App. 
+     1. click **History** to view the recent tabs you've had opened.  
         1. Click the link icon next to any of the items to copy it to your clipboard.
-        2. **Minimize** the History section.
-    4. In the Utility bar at the bottom left, click **Notes** to view recent notes you've created.
-        1. **Minimize** the Notes section.
+     2. **Minimize** the History section.
+     3. Click **Notes** to view recent notes you've created.
+     4. **Minimize** the Notes section.
 
 Let's start customizing our Console App for our pilot inside sales users!
 
 
-### **2C. Customize the Sales Console App**
+### **2B. Customize the Sales Console App**
 
 We've explored the console app, now let's customize it for your pilot sales users:
 
-1. Download Your Console Logo
-    1. Go to this [**Wikipedia Page**](https://en.wikipedia.org/wiki/File:Emblem-money.png).
-        1. Right Click on the Image and click **Save Image As**.
-        2. Save the Image to your **Desktop**.
-2. Modify the Sales Console App using App Manager
+1. Modify the Sales Console App using App Manager
     1. Click the gear icon and select **Setup**.
         1. Enter **App Manager** in Quick Find and select **App Manager**.
         2. Click the down arrow next to Sales Console and click **Edit**.
@@ -161,7 +97,7 @@ We've explored the console app, now let's customize it for your pilot sales user
                 2. Click the ⬅ to remove Marketing User from the list.
                 3. Click **Save**.
             7. In the upper right corner, click **Back**.
-3. Now let's view the Sales Console App Changes:
+2. Now let's view the Sales Console App Changes:
     1. Click the **App Launcher icon** and select **Sales Console App**.  Notice the Icon now shows the uploaded image.
     2. Click the ⬇️ next to Leads.  You can now select Cases and Forecasts, but can no longer select Campaigns.
         1. Click **Cases**.
