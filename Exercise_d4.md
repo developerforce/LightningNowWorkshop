@@ -19,7 +19,7 @@ title: Customize the Opportunity Workspace
                 1. Add **Close Date, Description, and Amount** to the Selected Fields section and **Save.**
             2. In the **Guidance for Success** text area, add *“Please be sure to update the Close date for this as you move along the sales cycle.”*
         3. Click **Next**.
-        4. Select **Active **and click** Finish**.
+        4. Select **Active** and click **Finish**.
 
 ### **4B.  Update Opportunity Highlights Panel**
 
@@ -90,16 +90,16 @@ It's time to customize our opportunity page for our pilot!  This is the last ste
                 3. Click **Done**.
         4. Hover over the Data.com Insights tile on the page layout section and click the X to **remove the Data.com Insights** tile from this page.
         5. Click on the **Tab Component** in the main window.
-            1. Let's make the Detail tab the default tab.
-                1. In the configuration panel, select Detail Tab in the Default Tab dropdown.
+            1. Let's make the **Detail** tab the default tab.
+                1. In the configuration panel, select **Detail** Tab in the Default Tab dropdown.
             2. Let's add a Tab for the Cases for this account.  
-                1. In the configuration panel, select Add Tab.
-                2. Click on the new Tab labeled “Details”.
-                3. Select Custom as the new Label and enter “Cases” and click Done.
+                1. In the configuration panel, select **Add Tab**.
+                2. Click on the new Tab labeled **Details**.
+                3. Select **Custom** as the new Label and enter **Cases** and click **Done**.
                 4. Navigate to the new tab in the main window and click on it.  
-                5. From the Component menu, select and drag the Related List - Single to this tab.
-                    1. In the configuration panel, for Parent Record, select Account Name.
-                    2. For Related List, select Cases.
+                5. From the Component menu, select and drag the **Related List - Single** component to this tab.
+                    1. In the configuration panel, for Parent Record, select **Account Name**.
+                    2. For Related List, select **Cases**.
         6. Click **Save**.
         7. Click **Activate**.
         8. Click **App Default**.
