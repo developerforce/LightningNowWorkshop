@@ -112,7 +112,7 @@ Calendars now allow you to put more than events on it.  You can create a calenda
             3. Field Name to Display: **Name**
             4. Click **Save**.
     2. On the Calendar click **Today**.  You should see Burlington Textiles Weaving Plant Generators.
-    3. Click the **down arrow** next to the** calendar icon** and make certain **Week** is checked.  If it isn't, click Week.
+    3. Click the **down arrow** next to the **calendar icon** and make certain **Week** is checked.  If it isn't, click Week.
     4. Click the **right arrow** to view next week.  You should see the five opportunities closing next Friday.
 
 
