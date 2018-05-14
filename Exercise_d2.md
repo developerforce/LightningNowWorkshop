@@ -37,8 +37,7 @@ There are times where you are performing multiple actions at the same time. From
     
            While we are here, let's create a feedback group for our users to use when they want to tell us how great Lightning is!
            
-           1. Click the ➕ symbol next to Recent Groups to create a new group to collect pilot feedback:
-           
+        2. Click the ➕ symbol next to Recent Groups to create a new group to collect pilot feedback:
             1. Name: **Lightning Feedback**
             2. Description: **Group for Lightning Pilot Feedback**
             3. Access: **Public**
@@ -104,7 +103,7 @@ We've explored the console app, now let's customize it for your pilot sales user
             1. Click the **down arrow** next to Recently Viewed and click **All Open Cases**.
             2. Click case **00001002**.  Notice how the case appears as a subtab within the United Oil & Gas Corp. account.  This is because case 00001002 is associated to that account.  
             3. Click the **United Oil & Gas Corp** subtab to the left of the 00001002 case subtab.  You can toggle back and forth between the account and case records.
-            4. Click the **down arrow **next to the **United Oil & Gas Co.** at the top of the screen and click **Pin Tab**.  Notice that it is the Account that is pinned, not the case.  The case is a subtab of the pinned account.
+            4. Click the **down arrow ** next to the **United Oil & Gas Co.** at the top of the screen and click **Pin Tab**.  Notice that it is the Account that is pinned, not the case.  The case is a subtab of the pinned account.
         2. In the Utility Bar at the bottom of the screen, click** Announcements**.  You can view the announcement you added.
             1. Minimize **Announcements**.
     
