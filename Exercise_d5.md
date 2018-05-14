@@ -8,16 +8,7 @@ title: Pilot Readiness & User Access to Lightning Experience
 
 Now that you've seen all the new, cool, and time-saving features Lightning Experience offers, let's walk through the steps you'll need to take to turn it on in your environment.  The first step is to check the readiness of your environment.  We make this super simple by providing two reports: one that shows those areas that will require more time and thought as you transition and the second that shows the readiness of existing Visualforce pages.  There are certain Salesforce Classic features and attributes that are not supported and our goal is to limit issues.  From there, we create a permission set and assign it to those users who need access to Lightning Experience.  
 
-1. **Run the Check Readiness reports** 
-Let's see how ready Sales Cloud is to transition to Lightning Experience.  
-    1. Click the Gear icon in the upper right and click Setup.
-    2. Click Lightning Experience on the left, just underneath Setup Home.
-    3. Click **Check Readiness** and then click the **Check Readiness button (move to implementation section)**
-    4. If an **Allow Access?** screen pops up, click **Allow**.
-    5. Click **Sales Cloud** and click **Check Readiness**.
-    6. Close the pop-up window.
-    7. You will receive an email letting you know your files are ready for review.  Both documents are added as Files within Salesforce.  It might take 5 minutes for them to appear.
-2. **Access the Readiness Report and Visualforce Report Files** 
+1. **Access the Readiness Report and Visualforce Report Files** 
 Not only do we get an email with a link to our two reports, but also we can access them directly from our environment.  Let's take a look at each one to see exactly what they provide.
     1. Click the App Launcher, and click **Files**.
     2. In the **Owned by Me** section, you will see a Visualforce Report PDF and a Lightning Experience Readiness Report PDF.
@@ -27,7 +18,7 @@ Not only do we get an email with a link to our two reports, but also we can acce
     6. Click the **Visualforce Report**.
     7. Scroll through the document to see what is contained within it.
     8. Close the preview when finished.
-3. **Grant Users Access to Lightning Experience**
+2. **Grant Users Access to Lightning Experience**
     Once Lightning Experience is turned on, create a permission set to control who in your organization can try it out.  You might turn it on for everyone or just a select group.  Either way, a permission set is the way to go.   
     1. In the upper right click the **Gear Icon** and click **Setup**.
     2. In the Quick Find box type **Permission**.
