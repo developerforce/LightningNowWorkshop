@@ -27,7 +27,7 @@ Not only do we get an email with a link to our two reports, but also we can acce
         1. Label: **Lightning Experience User**
         2. API Name: **[this field auto-completes]**
         3. License: **--None--**
-    5. Click** Save**.
+    5. Click **Save**.
     6. From within the Permission Set, click **System Permissions**.
     7. Click **Edit**.
     8. Check **Lightning Experience User**.
