@@ -107,7 +107,7 @@ It's time to customize our opportunity page for our pilot!  This is the last ste
         8. Click **Back** in the upper right corner.
     2. Within the **Express Logistics Portable Truck Generators** opportunity, click the **Closed stage** on the Sales Path.
         1. Click the **Select Closed Stage** button.
-        2. Choose **Closed Won **and click** Save.**
+        2. Choose **Closed Won** and click **Save.**
             1. See message displayed
 
 Give yourself a round of applause! You have finished customizing your sales console app for your pilot!
